@@ -1,0 +1,8 @@
+-meta-
+pop 20
+h 1
+comps 3
+final 0
+-trans-
+0 1 [0.2 _]
+0 2 [0.3 _]

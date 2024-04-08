@@ -1,0 +1,118 @@
+Time-out value is set to 1
+_________2__________
+Storm 1.8.1
+
+Date: Fri Feb 23 13:55:21 2024
+Command line arguments: --prism /CAVsubmission/CovidModel/COVID2019.pm '--io:constants' 'pop=5,c0_init=2,c1_init=0,c2_init=0,c3_init=1,c4_init=1,c5_init=1,c6_init=0,c7_init=0,c8_init=0,c9_init=0' --prop 'P=? [(q<31) U (c1+c2+c3+c4+c5 = 0)]'
+Current working directory: /CAVsubmission/run_scripts
+
+Time for model input parsing: 0.005s.
+
+Explored 305953 states in 0 seconds before abort.
+ERROR (ExplicitModelBuilder.cpp:314): Aborted in state space exploration.
+ERROR (storm.cpp:21): An exception caused Storm to terminate. The message of the exception is: AbortException: Aborted in state space exploration.
+return value: 124
+_________3__________
+Storm 1.8.1
+
+Date: Fri Feb 23 13:55:22 2024
+Command line arguments: --prism /CAVsubmission/CovidModel/COVID2019.pm '--io:constants' 'pop=6,c0_init=3,c1_init=0,c2_init=0,c3_init=1,c4_init=1,c5_init=1,c6_init=0,c7_init=0,c8_init=0,c9_init=0' --prop 'P=? [(q<31) U (c1+c2+c3+c4+c5 = 0)]'
+Current working directory: /CAVsubmission/run_scripts
+
+Time for model input parsing: 0.005s.
+
+Explored 303771 states in 0 seconds before abort.
+ERROR (ExplicitModelBuilder.cpp:314): Aborted in state space exploration.
+ERROR (storm.cpp:21): An exception caused Storm to terminate. The message of the exception is: AbortException: Aborted in state space exploration.
+return value: 124
+_________4__________
+Storm 1.8.1
+
+Date: Fri Feb 23 13:55:23 2024
+Command line arguments: --prism /CAVsubmission/CovidModel/COVID2019.pm '--io:constants' 'pop=7,c0_init=4,c1_init=0,c2_init=0,c3_init=1,c4_init=1,c5_init=1,c6_init=0,c7_init=0,c8_init=0,c9_init=0' --prop 'P=? [(q<31) U (c1+c2+c3+c4+c5 = 0)]'
+Current working directory: /CAVsubmission/run_scripts
+
+Time for model input parsing: 0.005s.
+
+Explored 299821 states in 0 seconds before abort.
+ERROR (ExplicitModelBuilder.cpp:314): Aborted in state space exploration.
+ERROR (storm.cpp:21): An exception caused Storm to terminate. The message of the exception is: AbortException: Aborted in state space exploration.
+return value: 124
+_________5__________
+Storm 1.8.1
+
+Date: Fri Feb 23 13:55:24 2024
+Command line arguments: --prism /CAVsubmission/CovidModel/COVID2019.pm '--io:constants' 'pop=8,c0_init=5,c1_init=0,c2_init=0,c3_init=1,c4_init=1,c5_init=1,c6_init=0,c7_init=0,c8_init=0,c9_init=0' --prop 'P=? [(q<31) U (c1+c2+c3+c4+c5 = 0)]'
+Current working directory: /CAVsubmission/run_scripts
+
+Time for model input parsing: 0.005s.
+
+Explored 304746 states in 0 seconds before abort.
+ERROR (ExplicitModelBuilder.cpp:314): Aborted in state space exploration.
+ERROR (storm.cpp:21): An exception caused Storm to terminate. The message of the exception is: AbortException: Aborted in state space exploration.
+return value: 124
+_________6__________
+Storm 1.8.1
+
+Date: Fri Feb 23 13:55:25 2024
+Command line arguments: --prism /CAVsubmission/CovidModel/COVID2019.pm '--io:constants' 'pop=9,c0_init=6,c1_init=0,c2_init=0,c3_init=1,c4_init=1,c5_init=1,c6_init=0,c7_init=0,c8_init=0,c9_init=0' --prop 'P=? [(q<31) U (c1+c2+c3+c4+c5 = 0)]'
+Current working directory: /CAVsubmission/run_scripts
+
+Time for model input parsing: 0.005s.
+
+Explored 304198 states in 0 seconds before abort.
+ERROR (ExplicitModelBuilder.cpp:314): Aborted in state space exploration.
+ERROR (storm.cpp:21): An exception caused Storm to terminate. The message of the exception is: AbortException: Aborted in state space exploration.
+return value: 124
+_________7__________
+Storm 1.8.1
+
+Date: Fri Feb 23 13:55:26 2024
+Command line arguments: --prism /CAVsubmission/CovidModel/COVID2019.pm '--io:constants' 'pop=10,c0_init=7,c1_init=0,c2_init=0,c3_init=1,c4_init=1,c5_init=1,c6_init=0,c7_init=0,c8_init=0,c9_init=0' --prop 'P=? [(q<31) U (c1+c2+c3+c4+c5 = 0)]'
+Current working directory: /CAVsubmission/run_scripts
+
+Time for model input parsing: 0.006s.
+
+Explored 302389 states in 0 seconds before abort.
+ERROR (ExplicitModelBuilder.cpp:314): Aborted in state space exploration.
+ERROR (storm.cpp:21): An exception caused Storm to terminate. The message of the exception is: AbortException: Aborted in state space exploration.
+return value: 124
+_________8__________
+Storm 1.8.1
+
+Date: Fri Feb 23 13:55:27 2024
+Command line arguments: --prism /CAVsubmission/CovidModel/COVID2019.pm '--io:constants' 'pop=11,c0_init=8,c1_init=0,c2_init=0,c3_init=1,c4_init=1,c5_init=1,c6_init=0,c7_init=0,c8_init=0,c9_init=0' --prop 'P=? [(q<31) U (c1+c2+c3+c4+c5 = 0)]'
+Current working directory: /CAVsubmission/run_scripts
+
+Time for model input parsing: 0.005s.
+
+Explored 294301 states in 0 seconds before abort.
+ERROR (ExplicitModelBuilder.cpp:314): Aborted in state space exploration.
+ERROR (storm.cpp:21): An exception caused Storm to terminate. The message of the exception is: AbortException: Aborted in state space exploration.
+return value: 124
+_________9__________
+Storm 1.8.1
+
+Date: Fri Feb 23 13:55:28 2024
+Command line arguments: --prism /CAVsubmission/CovidModel/COVID2019.pm '--io:constants' 'pop=12,c0_init=9,c1_init=0,c2_init=0,c3_init=1,c4_init=1,c5_init=1,c6_init=0,c7_init=0,c8_init=0,c9_init=0' --prop 'P=? [(q<31) U (c1+c2+c3+c4+c5 = 0)]'
+Current working directory: /CAVsubmission/run_scripts
+
+Time for model input parsing: 0.005s.
+
+Explored 292696 states in 0 seconds before abort.
+ERROR (ExplicitModelBuilder.cpp:314): Aborted in state space exploration.
+ERROR (storm.cpp:21): An exception caused Storm to terminate. The message of the exception is: AbortException: Aborted in state space exploration.
+return value: 124
+_________10__________
+Storm 1.8.1
+
+Date: Fri Feb 23 13:55:29 2024
+Command line arguments: --prism /CAVsubmission/CovidModel/COVID2019.pm '--io:constants' 'pop=13,c0_init=10,c1_init=0,c2_init=0,c3_init=1,c4_init=1,c5_init=1,c6_init=0,c7_init=0,c8_init=0,c9_init=0' --prop 'P=? [(q<31) U (c1+c2+c3+c4+c5 = 0)]'
+Current working directory: /CAVsubmission/run_scripts
+
+Time for model input parsing: 0.005s.
+
+Explored 297430 states in 0 seconds before abort.
+ERROR (ExplicitModelBuilder.cpp:314): Aborted in state space exploration.
+ERROR (storm.cpp:21): An exception caused Storm to terminate. The message of the exception is: AbortException: Aborted in state space exploration.
+return value: 124

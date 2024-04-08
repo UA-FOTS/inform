@@ -1,0 +1,100 @@
+Time-out value set to 1
+_________2__________
+The Modest Toolset (www.modestchecker.net), version v3.1.237-g2f62162c7.
+Command: modest modes /CAVsubmission/CovidModel/experiments/popinc/COVID2019_POPINC_TO2.jani --max-run-length 0
+
+
+
+
+COVID2019_POPINC_TO2.jani:model: info: COVID2019_POPINC_TO2 is a DTMC model and will be simulated as an MDP using uniform resolution of nondeterminism.
+COVID2019_POPINC_TO2.jani: info: Using default value of 0.95 for the confidence parameter.
+COVID2019_POPINC_TO2.jani: info: Using default value of 0.01 for the absolute half-width parameter.
+return value: 124
+_________3__________
+The Modest Toolset (www.modestchecker.net), version v3.1.237-g2f62162c7.
+Command: modest modes /CAVsubmission/CovidModel/experiments/popinc/COVID2019_POPINC_TO3.jani --max-run-length 0
+
+
+
+
+COVID2019_POPINC_TO3.jani:model: info: COVID2019_POPINC_TO3 is a DTMC model and will be simulated as an MDP using uniform resolution of nondeterminism.
+COVID2019_POPINC_TO3.jani: info: Using default value of 0.95 for the confidence parameter.
+COVID2019_POPINC_TO3.jani: info: Using default value of 0.01 for the absolute half-width parameter.
+return value: 124
+_________4__________
+The Modest Toolset (www.modestchecker.net), version v3.1.237-g2f62162c7.
+Command: modest modes /CAVsubmission/CovidModel/experiments/popinc/COVID2019_POPINC_TO4.jani --max-run-length 0
+
+
+
+
+COVID2019_POPINC_TO4.jani:model: info: COVID2019_POPINC_TO4 is a DTMC model and will be simulated as an MDP using uniform resolution of nondeterminism.
+COVID2019_POPINC_TO4.jani: info: Using default value of 0.95 for the confidence parameter.
+COVID2019_POPINC_TO4.jani: info: Using default value of 0.01 for the absolute half-width parameter.
+return value: 124
+_________5__________
+The Modest Toolset (www.modestchecker.net), version v3.1.237-g2f62162c7.
+Command: modest modes /CAVsubmission/CovidModel/experiments/popinc/COVID2019_POPINC_TO5.jani --max-run-length 0
+
+
+
+
+COVID2019_POPINC_TO5.jani:model: info: COVID2019_POPINC_TO5 is a DTMC model and will be simulated as an MDP using uniform resolution of nondeterminism.
+COVID2019_POPINC_TO5.jani: info: Using default value of 0.95 for the confidence parameter.
+COVID2019_POPINC_TO5.jani: info: Using default value of 0.01 for the absolute half-width parameter.
+return value: 124
+_________6__________
+The Modest Toolset (www.modestchecker.net), version v3.1.237-g2f62162c7.
+Command: modest modes /CAVsubmission/CovidModel/experiments/popinc/COVID2019_POPINC_TO6.jani --max-run-length 0
+
+
+
+
+COVID2019_POPINC_TO6.jani:model: info: COVID2019_POPINC_TO6 is a DTMC model and will be simulated as an MDP using uniform resolution of nondeterminism.
+COVID2019_POPINC_TO6.jani: info: Using default value of 0.95 for the confidence parameter.
+COVID2019_POPINC_TO6.jani: info: Using default value of 0.01 for the absolute half-width parameter.
+return value: 124
+_________7__________
+The Modest Toolset (www.modestchecker.net), version v3.1.237-g2f62162c7.
+Command: modest modes /CAVsubmission/CovidModel/experiments/popinc/COVID2019_POPINC_TO7.jani --max-run-length 0
+
+
+
+
+COVID2019_POPINC_TO7.jani:model: info: COVID2019_POPINC_TO7 is a DTMC model and will be simulated as an MDP using uniform resolution of nondeterminism.
+COVID2019_POPINC_TO7.jani: info: Using default value of 0.95 for the confidence parameter.
+COVID2019_POPINC_TO7.jani: info: Using default value of 0.01 for the absolute half-width parameter.
+return value: 124
+_________8__________
+The Modest Toolset (www.modestchecker.net), version v3.1.237-g2f62162c7.
+Command: modest modes /CAVsubmission/CovidModel/experiments/popinc/COVID2019_POPINC_TO8.jani --max-run-length 0
+
+
+
+
+COVID2019_POPINC_TO8.jani:model: info: COVID2019_POPINC_TO8 is a DTMC model and will be simulated as an MDP using uniform resolution of nondeterminism.
+COVID2019_POPINC_TO8.jani: info: Using default value of 0.95 for the confidence parameter.
+COVID2019_POPINC_TO8.jani: info: Using default value of 0.01 for the absolute half-width parameter.
+return value: 124
+_________9__________
+The Modest Toolset (www.modestchecker.net), version v3.1.237-g2f62162c7.
+Command: modest modes /CAVsubmission/CovidModel/experiments/popinc/COVID2019_POPINC_TO9.jani --max-run-length 0
+
+
+
+
+COVID2019_POPINC_TO9.jani:model: info: COVID2019_POPINC_TO9 is a DTMC model and will be simulated as an MDP using uniform resolution of nondeterminism.
+COVID2019_POPINC_TO9.jani: info: Using default value of 0.95 for the confidence parameter.
+COVID2019_POPINC_TO9.jani: info: Using default value of 0.01 for the absolute half-width parameter.
+return value: 124
+_________10__________
+The Modest Toolset (www.modestchecker.net), version v3.1.237-g2f62162c7.
+Command: modest modes /CAVsubmission/CovidModel/experiments/popinc/COVID2019_POPINC_TO10.jani --max-run-length 0
+
+
+
+
+COVID2019_POPINC_TO10.jani:model: info: COVID2019_POPINC_TO10 is a DTMC model and will be simulated as an MDP using uniform resolution of nondeterminism.
+COVID2019_POPINC_TO10.jani: info: Using default value of 0.95 for the confidence parameter.
+COVID2019_POPINC_TO10.jani: info: Using default value of 0.01 for the absolute half-width parameter.
+return value: 124

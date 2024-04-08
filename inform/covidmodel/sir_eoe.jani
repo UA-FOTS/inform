@@ -1,0 +1,781 @@
+{
+    "actions": [],
+    "automata": [
+        {
+            "edges": [
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "comment": "q <- 1",
+                                    "ref": "q",
+                                    "value": 1
+                                },
+                                {
+                                    "comment": "t0_0 <- c0",
+                                    "ref": "t0_0",
+                                    "value": "c0"
+                                },
+                                {
+                                    "comment": "time_step <- (((q = 0) & (c1 > 0)) ? 1 : 0)",
+                                    "ref": "time_step",
+                                    "value": {
+                                        "else": 0,
+                                        "if": {
+                                            "left": {
+                                                "left": "q",
+                                                "op": "=",
+                                                "right": 0
+                                            },
+                                            "op": "∧",
+                                            "right": {
+                                                "left": "c1",
+                                                "op": ">",
+                                                "right": 0
+                                            }
+                                        },
+                                        "op": "ite",
+                                        "then": 1
+                                    }
+                                }
+                            ],
+                            "location": "l"
+                        }
+                    ],
+                    "guard": {
+                        "comment": "(q = 0)",
+                        "exp": {
+                            "left": "q",
+                            "op": "=",
+                            "right": 0
+                        }
+                    },
+                    "location": "l"
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "comment": "q <- 2",
+                                    "ref": "q",
+                                    "value": 2
+                                },
+                                {
+                                    "comment": "time_step <- (((q = 0) & (c1 > 0)) ? 1 : 0)",
+                                    "ref": "time_step",
+                                    "value": {
+                                        "else": 0,
+                                        "if": {
+                                            "left": {
+                                                "left": "q",
+                                                "op": "=",
+                                                "right": 0
+                                            },
+                                            "op": "∧",
+                                            "right": {
+                                                "left": "c1",
+                                                "op": ">",
+                                                "right": 0
+                                            }
+                                        },
+                                        "op": "ite",
+                                        "then": 1
+                                    }
+                                }
+                            ],
+                            "location": "l"
+                        }
+                    ],
+                    "guard": {
+                        "comment": "((q = 1) & (t0_0 = 0))",
+                        "exp": {
+                            "left": {
+                                "left": "q",
+                                "op": "=",
+                                "right": 1
+                            },
+                            "op": "∧",
+                            "right": {
+                                "left": "t0_0",
+                                "op": "=",
+                                "right": 0
+                            }
+                        }
+                    },
+                    "location": "l"
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "comment": "fr0 <- (fr0 + 1)",
+                                    "ref": "fr0",
+                                    "value": {
+                                        "left": "fr0",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "t0_0 <- (t0_0 - 1)",
+                                    "ref": "t0_0",
+                                    "value": {
+                                        "left": "t0_0",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "time_step <- (((q = 0) & (c1 > 0)) ? 1 : 0)",
+                                    "ref": "time_step",
+                                    "value": {
+                                        "else": 0,
+                                        "if": {
+                                            "left": {
+                                                "left": "q",
+                                                "op": "=",
+                                                "right": 0
+                                            },
+                                            "op": "∧",
+                                            "right": {
+                                                "left": "c1",
+                                                "op": ">",
+                                                "right": 0
+                                            }
+                                        },
+                                        "op": "ite",
+                                        "then": 1
+                                    }
+                                }
+                            ],
+                            "location": "l",
+                            "probability": {
+                                "comment": "(1 - (1/5 ^ c1))",
+                                "exp": {
+                                    "left": 1,
+                                    "op": "-",
+                                    "right": {
+                                        "left": 0.2,
+                                        "op": "pow",
+                                        "right": "c1"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "assignments": [
+                                {
+                                    "comment": "t0_0 <- (t0_0 - 1)",
+                                    "ref": "t0_0",
+                                    "value": {
+                                        "left": "t0_0",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "time_step <- (((q = 0) & (c1 > 0)) ? 1 : 0)",
+                                    "ref": "time_step",
+                                    "value": {
+                                        "else": 0,
+                                        "if": {
+                                            "left": {
+                                                "left": "q",
+                                                "op": "=",
+                                                "right": 0
+                                            },
+                                            "op": "∧",
+                                            "right": {
+                                                "left": "c1",
+                                                "op": ">",
+                                                "right": 0
+                                            }
+                                        },
+                                        "op": "ite",
+                                        "then": 1
+                                    }
+                                }
+                            ],
+                            "location": "l",
+                            "probability": {
+                                "comment": "(1/5 ^ c1)",
+                                "exp": {
+                                    "left": 0.2,
+                                    "op": "pow",
+                                    "right": "c1"
+                                }
+                            }
+                        }
+                    ],
+                    "guard": {
+                        "comment": "((q = 1) & (t0_0 > 0))",
+                        "exp": {
+                            "left": {
+                                "left": "q",
+                                "op": "=",
+                                "right": 1
+                            },
+                            "op": "∧",
+                            "right": {
+                                "left": "t0_0",
+                                "op": ">",
+                                "right": 0
+                            }
+                        }
+                    },
+                    "location": "l"
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "comment": "q <- 3",
+                                    "ref": "q",
+                                    "value": 3
+                                },
+                                {
+                                    "comment": "t1_1 <- c1",
+                                    "ref": "t1_1",
+                                    "value": "c1"
+                                },
+                                {
+                                    "comment": "time_step <- (((q = 0) & (c1 > 0)) ? 1 : 0)",
+                                    "ref": "time_step",
+                                    "value": {
+                                        "else": 0,
+                                        "if": {
+                                            "left": {
+                                                "left": "q",
+                                                "op": "=",
+                                                "right": 0
+                                            },
+                                            "op": "∧",
+                                            "right": {
+                                                "left": "c1",
+                                                "op": ">",
+                                                "right": 0
+                                            }
+                                        },
+                                        "op": "ite",
+                                        "then": 1
+                                    }
+                                }
+                            ],
+                            "location": "l"
+                        }
+                    ],
+                    "guard": {
+                        "comment": "(q = 2)",
+                        "exp": {
+                            "left": "q",
+                            "op": "=",
+                            "right": 2
+                        }
+                    },
+                    "location": "l"
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "comment": "q <- 4",
+                                    "ref": "q",
+                                    "value": 4
+                                },
+                                {
+                                    "comment": "time_step <- (((q = 0) & (c1 > 0)) ? 1 : 0)",
+                                    "ref": "time_step",
+                                    "value": {
+                                        "else": 0,
+                                        "if": {
+                                            "left": {
+                                                "left": "q",
+                                                "op": "=",
+                                                "right": 0
+                                            },
+                                            "op": "∧",
+                                            "right": {
+                                                "left": "c1",
+                                                "op": ">",
+                                                "right": 0
+                                            }
+                                        },
+                                        "op": "ite",
+                                        "then": 1
+                                    }
+                                }
+                            ],
+                            "location": "l"
+                        }
+                    ],
+                    "guard": {
+                        "comment": "((q = 3) & (t1_1 = 0))",
+                        "exp": {
+                            "left": {
+                                "left": "q",
+                                "op": "=",
+                                "right": 3
+                            },
+                            "op": "∧",
+                            "right": {
+                                "left": "t1_1",
+                                "op": "=",
+                                "right": 0
+                            }
+                        }
+                    },
+                    "location": "l"
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "comment": "fr1 <- (fr1 + 1)",
+                                    "ref": "fr1",
+                                    "value": {
+                                        "left": "fr1",
+                                        "op": "+",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "t1_1 <- (t1_1 - 1)",
+                                    "ref": "t1_1",
+                                    "value": {
+                                        "left": "t1_1",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "time_step <- (((q = 0) & (c1 > 0)) ? 1 : 0)",
+                                    "ref": "time_step",
+                                    "value": {
+                                        "else": 0,
+                                        "if": {
+                                            "left": {
+                                                "left": "q",
+                                                "op": "=",
+                                                "right": 0
+                                            },
+                                            "op": "∧",
+                                            "right": {
+                                                "left": "c1",
+                                                "op": ">",
+                                                "right": 0
+                                            }
+                                        },
+                                        "op": "ite",
+                                        "then": 1
+                                    }
+                                }
+                            ],
+                            "location": "l",
+                            "probability": {
+                                "comment": "3/10",
+                                "exp": 0.3
+                            }
+                        },
+                        {
+                            "assignments": [
+                                {
+                                    "comment": "t1_1 <- (t1_1 - 1)",
+                                    "ref": "t1_1",
+                                    "value": {
+                                        "left": "t1_1",
+                                        "op": "-",
+                                        "right": 1
+                                    }
+                                },
+                                {
+                                    "comment": "time_step <- (((q = 0) & (c1 > 0)) ? 1 : 0)",
+                                    "ref": "time_step",
+                                    "value": {
+                                        "else": 0,
+                                        "if": {
+                                            "left": {
+                                                "left": "q",
+                                                "op": "=",
+                                                "right": 0
+                                            },
+                                            "op": "∧",
+                                            "right": {
+                                                "left": "c1",
+                                                "op": ">",
+                                                "right": 0
+                                            }
+                                        },
+                                        "op": "ite",
+                                        "then": 1
+                                    }
+                                }
+                            ],
+                            "location": "l",
+                            "probability": {
+                                "comment": "7/10",
+                                "exp": 0.7
+                            }
+                        }
+                    ],
+                    "guard": {
+                        "comment": "((q = 3) & (t1_1 > 0))",
+                        "exp": {
+                            "left": {
+                                "left": "q",
+                                "op": "=",
+                                "right": 3
+                            },
+                            "op": "∧",
+                            "right": {
+                                "left": "t1_1",
+                                "op": ">",
+                                "right": 0
+                            }
+                        }
+                    },
+                    "location": "l"
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "comment": "q <- 0",
+                                    "ref": "q",
+                                    "value": 0
+                                },
+                                {
+                                    "comment": "c0 <- (c0 - fr0)",
+                                    "ref": "c0",
+                                    "value": {
+                                        "left": "c0",
+                                        "op": "-",
+                                        "right": "fr0"
+                                    }
+                                },
+                                {
+                                    "comment": "c1 <- ((c1 + fr0) - fr1)",
+                                    "ref": "c1",
+                                    "value": {
+                                        "left": {
+                                            "left": "c1",
+                                            "op": "+",
+                                            "right": "fr0"
+                                        },
+                                        "op": "-",
+                                        "right": "fr1"
+                                    }
+                                },
+                                {
+                                    "comment": "c2 <- (c2 + fr1)",
+                                    "ref": "c2",
+                                    "value": {
+                                        "left": "c2",
+                                        "op": "+",
+                                        "right": "fr1"
+                                    }
+                                },
+                                {
+                                    "comment": "fr0 <- 0",
+                                    "ref": "fr0",
+                                    "value": 0
+                                },
+                                {
+                                    "comment": "fr1 <- 0",
+                                    "ref": "fr1",
+                                    "value": 0
+                                },
+                                {
+                                    "comment": "time_step <- (((q = 0) & (c1 > 0)) ? 1 : 0)",
+                                    "ref": "time_step",
+                                    "value": {
+                                        "else": 0,
+                                        "if": {
+                                            "left": {
+                                                "left": "q",
+                                                "op": "=",
+                                                "right": 0
+                                            },
+                                            "op": "∧",
+                                            "right": {
+                                                "left": "c1",
+                                                "op": ">",
+                                                "right": 0
+                                            }
+                                        },
+                                        "op": "ite",
+                                        "then": 1
+                                    }
+                                }
+                            ],
+                            "location": "l"
+                        }
+                    ],
+                    "guard": {
+                        "comment": "((q = 4) & ((c0 >= fr0) & (c1 >= fr1)))",
+                        "exp": {
+                            "left": {
+                                "left": "q",
+                                "op": "=",
+                                "right": 4
+                            },
+                            "op": "∧",
+                            "right": {
+                                "left": {
+                                    "left": "c0",
+                                    "op": "≥",
+                                    "right": "fr0"
+                                },
+                                "op": "∧",
+                                "right": {
+                                    "left": "c1",
+                                    "op": "≥",
+                                    "right": "fr1"
+                                }
+                            }
+                        }
+                    },
+                    "location": "l"
+                },
+                {
+                    "destinations": [
+                        {
+                            "assignments": [
+                                {
+                                    "comment": "q <- 5",
+                                    "ref": "q",
+                                    "value": 5
+                                },
+                                {
+                                    "comment": "time_step <- (((q = 0) & (c1 > 0)) ? 1 : 0)",
+                                    "ref": "time_step",
+                                    "value": {
+                                        "else": 0,
+                                        "if": {
+                                            "left": {
+                                                "left": "q",
+                                                "op": "=",
+                                                "right": 0
+                                            },
+                                            "op": "∧",
+                                            "right": {
+                                                "left": "c1",
+                                                "op": ">",
+                                                "right": 0
+                                            }
+                                        },
+                                        "op": "ite",
+                                        "then": 1
+                                    }
+                                }
+                            ],
+                            "location": "l"
+                        }
+                    ],
+                    "guard": {
+                        "comment": "((q = 4) & ((c0 < fr0) | (c1 < fr1)))",
+                        "exp": {
+                            "left": {
+                                "left": "q",
+                                "op": "=",
+                                "right": 4
+                            },
+                            "op": "∧",
+                            "right": {
+                                "left": {
+                                    "left": "c0",
+                                    "op": "<",
+                                    "right": "fr0"
+                                },
+                                "op": "∨",
+                                "right": {
+                                    "left": "c1",
+                                    "op": "<",
+                                    "right": "fr1"
+                                }
+                            }
+                        }
+                    },
+                    "location": "l"
+                }
+            ],
+            "initial-locations": [
+                "l"
+            ],
+            "locations": [
+                {
+                    "name": "l"
+                }
+            ],
+            "name": "compartmental_model",
+            "variables": [
+                {
+                    "initial-value": 10,
+                    "name": "c0",
+                    "type": {
+                        "base": "int",
+                        "kind": "bounded",
+                        "lower-bound": 0,
+                        "upper-bound": 10
+                    }
+                },
+                {
+                    "initial-value": 0,
+                    "name": "c2",
+                    "type": {
+                        "base": "int",
+                        "kind": "bounded",
+                        "lower-bound": 0,
+                        "upper-bound": 10
+                    }
+                },
+                {
+                    "initial-value": 0,
+                    "name": "fr0",
+                    "type": {
+                        "base": "int",
+                        "kind": "bounded",
+                        "lower-bound": 0,
+                        "upper-bound": 10
+                    }
+                },
+                {
+                    "initial-value": 0,
+                    "name": "t0_0",
+                    "type": {
+                        "base": "int",
+                        "kind": "bounded",
+                        "lower-bound": 0,
+                        "upper-bound": 10
+                    }
+                },
+                {
+                    "initial-value": 0,
+                    "name": "tt0_1",
+                    "type": {
+                        "base": "int",
+                        "kind": "bounded",
+                        "lower-bound": 0,
+                        "upper-bound": 10
+                    }
+                },
+                {
+                    "initial-value": 0,
+                    "name": "fr1",
+                    "type": {
+                        "base": "int",
+                        "kind": "bounded",
+                        "lower-bound": 0,
+                        "upper-bound": 10
+                    }
+                },
+                {
+                    "initial-value": 0,
+                    "name": "t1_1",
+                    "type": {
+                        "base": "int",
+                        "kind": "bounded",
+                        "lower-bound": 0,
+                        "upper-bound": 10
+                    }
+                }
+            ]
+        }
+    ],
+    "constants": [
+        {
+            "name": "pop",
+            "type": "int",
+            "value": 20
+        },
+        {
+            "name": "c0_init",
+            "type": "int",
+            "value": 10
+        },
+        {
+            "name": "c1_init",
+            "type": "int",
+            "value": 10
+        },
+        {
+            "name": "c2_init",
+            "type": "int",
+            "value": 0
+        }
+    ],
+    "features": [
+        "derived-operators"
+    ],
+    "jani-version": 1,
+    "name": "sir_eoe",
+    "properties": [
+        {
+            "expression": {
+                "fun": "values",
+                "op": "filter",
+                "states": {
+                    "op": "initial"
+                },
+                "values": {
+                    "accumulate": [
+                        "steps"
+                    ],
+                    "exp": "time_step",
+                    "op": "Emin",
+                    "reach": {
+                        "left": "c1",
+                        "op": "=",
+                        "right": 0
+                    }
+                }
+            },
+            "name": "1"
+        }
+    ],
+    "restrict-initial": {
+        "exp": true
+    },
+    "system": {
+        "elements": [
+            {
+                "automaton": "compartmental_model"
+            }
+        ]
+    },
+    "type": "dtmc",
+    "variables": [
+        {
+            "initial-value": 0,
+            "name": "time_step",
+            "transient": true,
+            "type": "real"
+        },
+        {
+            "initial-value": 0,
+            "name": "q",
+            "type": {
+                "base": "int",
+                "kind": "bounded",
+                "lower-bound": 0,
+                "upper-bound": 5
+            }
+        },
+        {
+            "initial-value": 10,
+            "name": "c1",
+            "type": {
+                "base": "int",
+                "kind": "bounded",
+                "lower-bound": 0,
+                "upper-bound": 10
+            }
+        }
+    ]
+}

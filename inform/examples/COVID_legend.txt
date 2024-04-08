@@ -1,0 +1,12 @@
+COVID19 LEGEND
+
+// 0 S
+// 1 E
+// 2 Ipresym
+// 3 Iasym
+// 4 Imild
+// 5 Isev
+// 6 Ihop
+// 7 Iicu
+// 8 R
+// 9 D

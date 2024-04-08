@@ -1,0 +1,253 @@
+Time-out value set to 1
+_________2__________
+The Modest Toolset (www.modestchecker.net), version v3.1.237-g2f62162c7.
+Command: modest modes /CAVsubmission/CovidModel/experiments/popos/COVID2019_POPOS_TO2.jani --max-run-length 0
+
+
+
+
+COVID2019_POPOS_TO2.jani:model: info: COVID2019_POPOS_TO2 is a DTMC model and will be simulated as an MDP using uniform resolution of nondeterminism.
+COVID2019_POPOS_TO2.jani: info: Using default value of 0.95 for the confidence parameter.
+COVID2019_POPOS_TO2.jani: info: Using default value of 0.01 for the absolute half-width parameter.
+
+Peak memory usage: 61 MB
+Analysis results for COVID2019_POPOS_TO2.jani
+Status:          Finished 
+Simulation time: 0.1 s
+
++ Property 1
+  Estimated probability: 1 
+  Runs used:             490 
+  Run type:              MDP 
+  Status:                Finished 
+
+  + Error bounds
+    Statement: Adaptive: P(error > ε) < δ 
+    ε:         0.01 
+    δ:         0.050000000000000044 
+
+return value: 0
+_________3__________
+The Modest Toolset (www.modestchecker.net), version v3.1.237-g2f62162c7.
+Command: modest modes /CAVsubmission/CovidModel/experiments/popos/COVID2019_POPOS_TO3.jani --max-run-length 0
+
+
+
+
+COVID2019_POPOS_TO3.jani:model: info: COVID2019_POPOS_TO3 is a DTMC model and will be simulated as an MDP using uniform resolution of nondeterminism.
+COVID2019_POPOS_TO3.jani: info: Using default value of 0.95 for the confidence parameter.
+COVID2019_POPOS_TO3.jani: info: Using default value of 0.01 for the absolute half-width parameter.
+
+Peak memory usage: 61 MB
+Analysis results for COVID2019_POPOS_TO3.jani
+Status:          Finished 
+Simulation time: 0.1 s
+
++ Property 1
+  Estimated probability: 1 
+  Runs used:             490 
+  Run type:              MDP 
+  Status:                Finished 
+
+  + Error bounds
+    Statement: Adaptive: P(error > ε) < δ 
+    ε:         0.01 
+    δ:         0.050000000000000044 
+
+return value: 0
+_________4__________
+The Modest Toolset (www.modestchecker.net), version v3.1.237-g2f62162c7.
+Command: modest modes /CAVsubmission/CovidModel/experiments/popos/COVID2019_POPOS_TO4.jani --max-run-length 0
+
+
+
+
+COVID2019_POPOS_TO4.jani:model: info: COVID2019_POPOS_TO4 is a DTMC model and will be simulated as an MDP using uniform resolution of nondeterminism.
+COVID2019_POPOS_TO4.jani: info: Using default value of 0.95 for the confidence parameter.
+COVID2019_POPOS_TO4.jani: info: Using default value of 0.01 for the absolute half-width parameter.
+
+Peak memory usage: 61 MB
+Analysis results for COVID2019_POPOS_TO4.jani
+Status:          Finished 
+Simulation time: 0.1 s
+
++ Property 1
+  Estimated probability: 1 
+  Runs used:             490 
+  Run type:              MDP 
+  Status:                Finished 
+
+  + Error bounds
+    Statement: Adaptive: P(error > ε) < δ 
+    ε:         0.01 
+    δ:         0.050000000000000044 
+
+return value: 0
+_________5__________
+The Modest Toolset (www.modestchecker.net), version v3.1.237-g2f62162c7.
+Command: modest modes /CAVsubmission/CovidModel/experiments/popos/COVID2019_POPOS_TO5.jani --max-run-length 0
+
+
+
+
+COVID2019_POPOS_TO5.jani:model: info: COVID2019_POPOS_TO5 is a DTMC model and will be simulated as an MDP using uniform resolution of nondeterminism.
+COVID2019_POPOS_TO5.jani: info: Using default value of 0.95 for the confidence parameter.
+COVID2019_POPOS_TO5.jani: info: Using default value of 0.01 for the absolute half-width parameter.
+
+Peak memory usage: 61 MB
+Analysis results for COVID2019_POPOS_TO5.jani
+Status:          Finished 
+Simulation time: 0.1 s
+
++ Property 1
+  Estimated probability: 1 
+  Runs used:             490 
+  Run type:              MDP 
+  Status:                Finished 
+
+  + Error bounds
+    Statement: Adaptive: P(error > ε) < δ 
+    ε:         0.01 
+    δ:         0.050000000000000044 
+
+return value: 0
+_________6__________
+The Modest Toolset (www.modestchecker.net), version v3.1.237-g2f62162c7.
+Command: modest modes /CAVsubmission/CovidModel/experiments/popos/COVID2019_POPOS_TO6.jani --max-run-length 0
+
+
+
+
+COVID2019_POPOS_TO6.jani:model: info: COVID2019_POPOS_TO6 is a DTMC model and will be simulated as an MDP using uniform resolution of nondeterminism.
+COVID2019_POPOS_TO6.jani: info: Using default value of 0.95 for the confidence parameter.
+COVID2019_POPOS_TO6.jani: info: Using default value of 0.01 for the absolute half-width parameter.
+
+Peak memory usage: 61 MB
+Analysis results for COVID2019_POPOS_TO6.jani
+Status:          Finished 
+Simulation time: 0.1 s
+
++ Property 1
+  Estimated probability: 1 
+  Runs used:             490 
+  Run type:              MDP 
+  Status:                Finished 
+
+  + Error bounds
+    Statement: Adaptive: P(error > ε) < δ 
+    ε:         0.01 
+    δ:         0.050000000000000044 
+
+return value: 0
+_________7__________
+The Modest Toolset (www.modestchecker.net), version v3.1.237-g2f62162c7.
+Command: modest modes /CAVsubmission/CovidModel/experiments/popos/COVID2019_POPOS_TO7.jani --max-run-length 0
+
+
+
+
+COVID2019_POPOS_TO7.jani:model: info: COVID2019_POPOS_TO7 is a DTMC model and will be simulated as an MDP using uniform resolution of nondeterminism.
+COVID2019_POPOS_TO7.jani: info: Using default value of 0.95 for the confidence parameter.
+COVID2019_POPOS_TO7.jani: info: Using default value of 0.01 for the absolute half-width parameter.
+
+Peak memory usage: 62 MB
+Analysis results for COVID2019_POPOS_TO7.jani
+Status:          Finished 
+Simulation time: 0.1 s
+
++ Property 1
+  Estimated probability: 1 
+  Runs used:             490 
+  Run type:              MDP 
+  Status:                Finished 
+
+  + Error bounds
+    Statement: Adaptive: P(error > ε) < δ 
+    ε:         0.01 
+    δ:         0.050000000000000044 
+
+return value: 0
+_________8__________
+The Modest Toolset (www.modestchecker.net), version v3.1.237-g2f62162c7.
+Command: modest modes /CAVsubmission/CovidModel/experiments/popos/COVID2019_POPOS_TO8.jani --max-run-length 0
+
+
+
+
+COVID2019_POPOS_TO8.jani:model: info: COVID2019_POPOS_TO8 is a DTMC model and will be simulated as an MDP using uniform resolution of nondeterminism.
+COVID2019_POPOS_TO8.jani: info: Using default value of 0.95 for the confidence parameter.
+COVID2019_POPOS_TO8.jani: info: Using default value of 0.01 for the absolute half-width parameter.
+
+Peak memory usage: 61 MB
+Analysis results for COVID2019_POPOS_TO8.jani
+Status:          Finished 
+Simulation time: 0.1 s
+
++ Property 1
+  Estimated probability: 1 
+  Runs used:             490 
+  Run type:              MDP 
+  Status:                Finished 
+
+  + Error bounds
+    Statement: Adaptive: P(error > ε) < δ 
+    ε:         0.01 
+    δ:         0.050000000000000044 
+
+return value: 0
+_________9__________
+The Modest Toolset (www.modestchecker.net), version v3.1.237-g2f62162c7.
+Command: modest modes /CAVsubmission/CovidModel/experiments/popos/COVID2019_POPOS_TO9.jani --max-run-length 0
+
+
+
+
+COVID2019_POPOS_TO9.jani:model: info: COVID2019_POPOS_TO9 is a DTMC model and will be simulated as an MDP using uniform resolution of nondeterminism.
+COVID2019_POPOS_TO9.jani: info: Using default value of 0.95 for the confidence parameter.
+COVID2019_POPOS_TO9.jani: info: Using default value of 0.01 for the absolute half-width parameter.
+
+Peak memory usage: 61 MB
+Analysis results for COVID2019_POPOS_TO9.jani
+Status:          Finished 
+Simulation time: 0.1 s
+
++ Property 1
+  Estimated probability: 1 
+  Runs used:             490 
+  Run type:              MDP 
+  Status:                Finished 
+
+  + Error bounds
+    Statement: Adaptive: P(error > ε) < δ 
+    ε:         0.01 
+    δ:         0.050000000000000044 
+
+return value: 0
+_________10__________
+The Modest Toolset (www.modestchecker.net), version v3.1.237-g2f62162c7.
+Command: modest modes /CAVsubmission/CovidModel/experiments/popos/COVID2019_POPOS_TO10.jani --max-run-length 0
+
+
+
+
+COVID2019_POPOS_TO10.jani:model: info: COVID2019_POPOS_TO10 is a DTMC model and will be simulated as an MDP using uniform resolution of nondeterminism.
+COVID2019_POPOS_TO10.jani: info: Using default value of 0.95 for the confidence parameter.
+COVID2019_POPOS_TO10.jani: info: Using default value of 0.01 for the absolute half-width parameter.
+
+Peak memory usage: 61 MB
+Analysis results for COVID2019_POPOS_TO10.jani
+Status:          Finished 
+Simulation time: 0.1 s
+
++ Property 1
+  Estimated probability: 1 
+  Runs used:             490 
+  Run type:              MDP 
+  Status:                Finished 
+
+  + Error bounds
+    Statement: Adaptive: P(error > ε) < δ 
+    ε:         0.01 
+    δ:         0.050000000000000044 
+
+return value: 0

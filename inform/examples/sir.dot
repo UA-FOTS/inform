@@ -1,0 +1,7 @@
+digraph compmodel {
+V0 ["label"="0" ];
+V1 ["label"="1" ];
+V2 ["label"="2" ];
+V0 -> V1 ["label"="0.2, 1" ];
+V1 -> V2 ["label"="0.3" ];
+}

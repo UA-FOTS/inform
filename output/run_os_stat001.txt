@@ -1,0 +1,119 @@
+Time-out value set to 1
+os3000
+The Modest Toolset (www.modestchecker.net), version v3.1.237-g2f62162c7.
+Command: modest modes /CAVsubmission/CovidModel/experiments/popos/COVID2019_POP3000.jani -W 0.01 --max-run-length 0 --seed 997
+
+
+
+
+COVID2019_POP3000.jani:model: info: COVID2019_POP3000 is a DTMC model and will be simulated as an MDP using uniform resolution of nondeterminism.
+COVID2019_POP3000.jani: info: Using default value of 0.95 for the confidence parameter.
+return value: 124
+os0111
+The Modest Toolset (www.modestchecker.net), version v3.1.237-g2f62162c7.
+Command: modest modes /CAVsubmission/CovidModel/experiments/popos/COVID2019_POP0111.jani -W 0.01 --max-run-length 0 --seed 997
+
+
+
+
+COVID2019_POP0111.jani:model: info: COVID2019_POP0111 is a DTMC model and will be simulated as an MDP using uniform resolution of nondeterminism.
+COVID2019_POP0111.jani: info: Using default value of 0.95 for the confidence parameter.
+
+Peak memory usage: 61 MB
+Analysis results for COVID2019_POP0111.jani
+Status:          Finished 
+Simulation time: 0.1 s
+
++ Property 1
+  Estimated probability: 1 
+  Runs used:             490 
+  Run type:              MDP 
+  Status:                Finished 
+
+  + Error bounds
+    Statement: Adaptive: P(error > ε) < δ 
+    ε:         0.01 
+    δ:         0.050000000000000044 
+
+return value: 0
+os3110
+The Modest Toolset (www.modestchecker.net), version v3.1.237-g2f62162c7.
+Command: modest modes /CAVsubmission/CovidModel/experiments/popos/COVID2019_POP3110.jani -W 0.01 --max-run-length 0 --seed 997
+
+
+
+
+COVID2019_POP3110.jani:model: info: COVID2019_POP3110 is a DTMC model and will be simulated as an MDP using uniform resolution of nondeterminism.
+COVID2019_POP3110.jani: info: Using default value of 0.95 for the confidence parameter.
+
+Peak memory usage: 61 MB
+Analysis results for COVID2019_POP3110.jani
+Status:          Finished 
+Simulation time: 0.1 s
+
++ Property 1
+  Estimated probability: 1 
+  Runs used:             490 
+  Run type:              MDP 
+  Status:                Finished 
+
+  + Error bounds
+    Statement: Adaptive: P(error > ε) < δ 
+    ε:         0.01 
+    δ:         0.050000000000000044 
+
+return value: 0
+os2111
+The Modest Toolset (www.modestchecker.net), version v3.1.237-g2f62162c7.
+Command: modest modes /CAVsubmission/CovidModel/experiments/popos/COVID2019_POP2111.jani -W 0.01 --max-run-length 0 --seed 997
+
+
+
+
+COVID2019_POP2111.jani:model: info: COVID2019_POP2111 is a DTMC model and will be simulated as an MDP using uniform resolution of nondeterminism.
+COVID2019_POP2111.jani: info: Using default value of 0.95 for the confidence parameter.
+
+Peak memory usage: 61 MB
+Analysis results for COVID2019_POP2111.jani
+Status:          Finished 
+Simulation time: 0.1 s
+
++ Property 1
+  Estimated probability: 1 
+  Runs used:             490 
+  Run type:              MDP 
+  Status:                Finished 
+
+  + Error bounds
+    Statement: Adaptive: P(error > ε) < δ 
+    ε:         0.01 
+    δ:         0.050000000000000044 
+
+return value: 0
+os1400
+The Modest Toolset (www.modestchecker.net), version v3.1.237-g2f62162c7.
+Command: modest modes /CAVsubmission/CovidModel/experiments/popos/COVID2019_POP1400.jani -W 0.01 --max-run-length 0 --seed 997
+
+
+
+
+COVID2019_POP1400.jani:model: info: COVID2019_POP1400 is a DTMC model and will be simulated as an MDP using uniform resolution of nondeterminism.
+COVID2019_POP1400.jani: info: Using default value of 0.95 for the confidence parameter.
+
+Peak memory usage: 61 MB
+Analysis results for COVID2019_POP1400.jani
+Status:          Finished 
+Simulation time: 0.1 s
+
++ Property 1
+  Estimated probability: 1 
+  Runs used:             490 
+  Run type:              MDP 
+  Status:                Finished 
+
+  + Error bounds
+    Statement: Adaptive: P(error > ε) < δ 
+    ε:         0.01 
+    δ:         0.050000000000000044 
+
+return value: 0

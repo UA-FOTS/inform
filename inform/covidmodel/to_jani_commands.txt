@@ -1,0 +1,28 @@
+./storm-conv --prism /data/COVID_TOY.pm --tojani /data/experiments/COVIDTOY_EOE.jani --prop "R{\"time_step\"}=? [F
+ (c1+c2+c3+c4+c5 = 0)]" --input:constants pop=10,c0_init=8,c1_init=0,c2_init=2,c3_init=2,c4_init=0,c5_init=0,c6_init=0,c7_init=0,c8_init=0,c9_init=0
+
+
+./storm-conv --prism /data/COVID2019.pm --tojani /data/experiments/COVIDTOY_EOE5322.jani --prop "R{\"time_step\"}=? [F
+ (c1+c2+c3+c4+c5 = 0)]" --input:constants pop=5,c0_init=3,c1_init=0,c2_init=1,c3_init=1,c4_init=0,c5_init=0,c6_init=0,c7_init=0,c8_init=0,c9_init=0
+
+
+// Checks the probability of reaching q 30 with only dead and recovered peoples.
+./storm-conv --prism /data/COVID2019.pm --tojani /data/experiments/COVID2019_P211.jani --prop "P=? [F
+ (c0+c1+c2+c3+c4+c5+c6+c7 = 0)]" --input:constants pop=2,c0_init=1,c1_init=0,c2_init=1,c3_init=0,c4_init=0,c5_init=0,c6_init=0,c7_init=0,c8_init=0,c9_init=0
+
+
+./storm-conv --prism /data/COVID2019.pm --tojani /data/experiments/COVID2019_POP822.jani --prop "P=? [F
+ (q = 31)]" --input:constants pop=10,c0_init=8,c1_init=0,c2_init=1,c3_init=1,c4_init=0,c5_init=0,c6_init=0,c7_init=0,c8_init=0,c9_init=0
+
+
+
+./storm --prism /data/COVID2019fast.pm --prop "R{\"time_step\"}=? [F (c1+c2+c3+c4+c5 = 0)]" --io:constants pop=10,c0_init=8,c1_init=0,c2_init=2,c3_init=2,c4_init=0,c5_init=0,c6_init=0,c7_init=0,c8_init=0,c9_init=0
+
+./storm-conv --prism /data/COVID2019.pm --tojani /data/experiments/COVID2019_POP311.jani --input:constants pop=5,c0_init=3,c1_init=0,c2_init=1,c3_init=1,c4_init=0,c5_init=0,c6_init=0,c7_init=0,c8_init=0,c9_init=0 --prop "P=? [F (q=31)]"
+
+
+./storm-conv --prism /data/COVID2019.pm --tojani /data/experiments/COVID2019_POP311comp.jani --input:constants pop=5,c0_init=3,c1_init=0,c2_init=1,c3_init=1,c4_init=0,c5_init=0,c6_init=0,c7_init=0,c8_init=0,c9_init=0 --prop "P=? [G (q!=31)]"
+
+./storm-conv --prism /data/COVID2019.pm --tojani /data/experiments/COVID2019_POP311final.jani --input:constants pop=5,c0_init=3,c1_init=0,c2_init=1,c3_init=1,c4_init=0,c5_init=0,c6_init=0,c7_init=0,c8_init=0,c9_init=0 --prop "P=? [(q<31) U (c1+c2+c3+c4+c5 = 0)]"
+
+./storm --prism /data/COVID2019.pm --io:constants pop=5,c0_init=3,c1_init=0,c2_init=1,c3_init=1,c4_init=0,c5_init=0,c6_init=0,c7_init=0,c8_init=0,c9_init=0 --prop "P=? [F (q=31)]"

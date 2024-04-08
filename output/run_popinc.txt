@@ -1,0 +1,111 @@
+Time-value is set to 1
+POP3000
+Storm 1.8.1
+
+Date: Fri Feb 23 13:31:18 2024
+Command line arguments: --prism /CAVsubmission/CovidModel/COVID2019.pm '--io:constants' 'pop=3,c0_init=3,c1_init=0,c2_init=0,c3_init=0,c4_init=0,c5_init=0,c6_init=0,c7_init=0,c8_init=0,c9_init=0' --prop 'P=? [(q<31) U (c1+c2+c3+c4+c5 = 0)]'
+Current working directory: /CAVsubmission/run_scripts
+
+Time for model input parsing: 0.005s.
+
+Time for model construction: 0.025s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	1
+Transitions: 	1
+Reward Models:  none
+State Labels: 	4 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * (q < 31) -> 1 item(s)
+   * (((((c1 + c2) + c3) + c4) + c5) = 0) -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [(q < 31) U (((((c1 + c2) + c3) + c4) + c5) = 0)] ...
+Result (for initial states): 1
+Time for model checking: 0.000s.
+return value: 0
+pop0111
+Storm 1.8.1
+
+Date: Fri Feb 23 13:31:18 2024
+Command line arguments: --prism /CAVsubmission/CovidModel/COVID2019.pm '--io:constants' 'pop=3,c0_init=0,c1_init=0,c2_init=0,c3_init=1,c4_init=1,c5_init=1,c6_init=0,c7_init=0,c8_init=0,c9_init=0' --prop 'P=? [(q<31) U (c1+c2+c3+c4+c5 = 0)]'
+Current working directory: /CAVsubmission/run_scripts
+
+Time for model input parsing: 0.005s.
+
+Time for model construction: 0.042s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	4471
+Transitions: 	4890
+Reward Models:  none
+State Labels: 	4 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * (q < 31) -> 4311 item(s)
+   * (((((c1 + c2) + c3) + c4) + c5) = 0) -> 10 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [(q < 31) U (((((c1 + c2) + c3) + c4) + c5) = 0)] ...
+Result (for initial states): 0.9987240195
+Time for model checking: 0.001s.
+return value: 0
+pop3110
+Storm 1.8.1
+
+Date: Fri Feb 23 13:31:18 2024
+Command line arguments: --prism /CAVsubmission/CovidModel/COVID2019.pm '--io:constants' 'pop=5,c0_init=3,c1_init=0,c2_init=0,c3_init=1,c4_init=1,c5_init=0,c6_init=0,c7_init=0,c8_init=0,c9_init=0' --prop 'P=? [(q<31) U (c1+c2+c3+c4+c5 = 0)]'
+Current working directory: /CAVsubmission/run_scripts
+
+Time for model input parsing: 0.005s.
+
+Explored 315248 states in 0 seconds before abort.
+ERROR (ExplicitModelBuilder.cpp:314): Aborted in state space exploration.
+ERROR (storm.cpp:21): An exception caused Storm to terminate. The message of the exception is: AbortException: Aborted in state space exploration.
+return value: 124
+pop2111
+Storm 1.8.1
+
+Date: Fri Feb 23 13:31:19 2024
+Command line arguments: --prism /CAVsubmission/CovidModel/COVID2019.pm '--io:constants' 'pop=5,c0_init=2,c1_init=0,c2_init=0,c3_init=1,c4_init=1,c5_init=1,c6_init=0,c7_init=0,c8_init=0,c9_init=0' --prop 'P=? [(q<31) U (c1+c2+c3+c4+c5 = 0)]'
+Current working directory: /CAVsubmission/run_scripts
+
+Time for model input parsing: 0.005s.
+
+Explored 315397 states in 0 seconds before abort.
+ERROR (ExplicitModelBuilder.cpp:314): Aborted in state space exploration.
+ERROR (storm.cpp:21): An exception caused Storm to terminate. The message of the exception is: AbortException: Aborted in state space exploration.
+return value: 124
+pop1400
+Storm 1.8.1
+
+Date: Fri Feb 23 13:31:20 2024
+Command line arguments: --prism /CAVsubmission/CovidModel/COVID2019.pm '--io:constants' 'pop=5,c0_init=1,c1_init=0,c2_init=0,c3_init=4,c4_init=0,c5_init=0,c6_init=0,c7_init=0,c8_init=0,c9_init=0' --prop 'P=? [(q<31) U (c1+c2+c3+c4+c5 = 0)]'
+Current working directory: /CAVsubmission/run_scripts
+
+Time for model input parsing: 0.005s.
+
+Time for model construction: 0.049s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	6380
+Transitions: 	6879
+Reward Models:  none
+State Labels: 	4 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * (q < 31) -> 6307 item(s)
+   * (((((c1 + c2) + c3) + c4) + c5) = 0) -> 5 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [(q < 31) U (((((c1 + c2) + c3) + c4) + c5) = 0)] ...
+Result (for initial states): 0.9972593727
+Time for model checking: 0.001s.
+return value: 0

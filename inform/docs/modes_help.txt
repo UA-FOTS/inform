@@ -1,0 +1,473 @@
+The Modest Toolset (www.modestchecker.net), version v3.1.237-g2f62162c7.
+Command: modest modes --help
+modes: Performs simulation and statistical model checking with sound treatment of
+nondeterminism.
+
+Usage: modest simulate <files> <parameters...>
+
+  files: Specifies the input files.
+
+-D, --collect-diagnostics
+      Collect diagnostic information during simulation. May reduce performance.
+
+--cycle-bound <n>
+      The maximum number of states to store for cycle detection, or 0 to store
+      the entire path. Default: 1 state.
+
+-?, --help
+      Show usage information.
+
+--max-run-length <n>
+      The maximum length of a simulation run, or 0 to specify no maximum
+      length. If any run exceeds this number of steps and not all properties
+      are decided, simulation is aborted. Default: 10000 steps.
+
+--max-run-length-as-end
+      Treat the maximum length of a simulation run, like a dead end state
+      would have been reached, i.e., goal is and can not be reached. To avoid
+      that simulation is aborted if max. run length is reached and not all
+      properties are decided. Default: false.
+
+-O, --output <file> [<format>]
+If specified, the analysis results will be written to this file.
+      The format of the analysis results.
+      * Text: The same textual format as written to standard output (default).
+      * Json: The JSON-based format used for the Quantitative Verification
+        Benchmark Set.
+      * Minimal: One property and the corresponding result per line.
+
+-Y, --overwrite
+      Overwrite existing output and trace files.
+
+--rng <generator>
+      The type of pseudo-random number generator to use.
+      * MersenneTwister: Mersenne Twister 19937 generator (default)
+      * Subtractive: Modified version of Knuth's subtractive generator
+      * XorShift: Multiply-with-carry XOR-shift generator
+      * MCG31: Multiplicative congruental generator using a modulus of 2^31-1
+        and a multiplier of 1132489760
+      * MCG59: Multiplicative congruental generator using a modulus of 2^59
+        and a multiplier of 13^13
+      * WH1982: Wichmann-Hill's 1982 combined multiplicative congruental
+        generator
+      * WH2006: Wichmann-Hill's 2006 combined multiplicative congruental
+        generator
+      * MRG32: 32-bit combined multiple recursive generator with 2 components
+        of order 3
+      * Fibonacci: Parallel Additive Lagged Fibonacci generator
+
+--seed <n>
+      The seed value to be used for pseudo-random number generation to sample
+      stochastic behaviour.
+
+--server
+      Run as server for distributed simulation.
+
+--server-ip <ip>
+      The IP of the network interface on which to listen for incoming
+      connections when run as server. When not specified, listen on all
+      interfaces.
+
+--server-port <port>
+      The port on which to listen for incoming connections when run as server.
+      Default: 15293.
+
+--thread-budget
+      Specifies how many batches of results a fast thread may at most be ahead
+      of a slow thread, or 0 to disable thread throttling. Default: 0.
+
+-J, --threads <n>
+      The number of simulation threads to use, or 0 to use one thread per
+      logical CPU minus one (default).
+
+--unsafe
+      Generate faster simulation code by omitting some runtime checks.
+
+
+--------- Configuration ----------
+
+--batch-size <n>
+      The number of run results evaluated at once. Use 0 to use the defaults
+      of 10 for multithreaded and 100 for distributed simulation. If rare
+      event simulation with the FixedEffort, WeightedFixedEffort or
+      ExpectedSuccess methods is used, the defaults are 1 and 10, respectively.
+
+--hosts <list>
+      A list of hosts to connect to for distributed simulation, e.g.
+      "[::1]:12345, modestchecker.net, example.com:2345". If not specified,
+      local multithreaded simulation is performed.
+
+--pwd <password>
+      The password for distributed simulation.
+
+--timeout <seconds>
+      The per-experiment simulation timeout in seconds, or 0 for no timeout
+      (default).
+
+
+---------- Experiments -----------
+
+-E, --experiment <constants>
+      Use the specified values for uninitialized constants, as in -E "C1=5,
+      C2=6, D=3.0". May be specified more than once in order to perform
+      multiple experiments.
+
+
+------------- Input --------------
+
+--digital-clocks
+      Convert a timed model to its digital clocks semantics.
+
+-F, --flatten
+      Roll out the interleaving semantics of all concurrent behaviour.
+
+-I, --input <formalism>
+      The input formalism to use. If omitted, the input formalism is selected
+      based on the input file names.
+      Accepted values: JANI, Modest
+
+-M, --model-type <type>
+      The type of the model to be simulated.
+      * Auto: Auto-detect an appropriate simulation model type (default).
+      * MA: Simulate as a Markov automaton model.
+      * MDP: Simulate as a Markov decision process model.
+      * RegionPTA: Simulate as a probabilistic timed automaton model using
+        regions.
+      * RepresentativePTA: Simulate as a probabilistic timed automaton model
+        using regions with an efficient data structure.
+      * ZonePTA: Simulate as a probabilistic timed automaton model using zones.
+      * SingularSHA: Simulate as a stochastic singular automaton model.
+      * NonlinearSHA: Simulate as a non-linear stochastic hybrid automaton
+        model.
+
+--no-var-opt
+      Do not optimise the set of variables of the model.
+
+--props <properties>
+      A comma-separated list of the names of the properties to be checked. If
+      omitted, all properties present in the model are checked (default).
+
+--no-location-vars
+      Do not try to detect variables used as location identifiers/program
+      counters and expand them into automaton locations.
+
+-TL, --trace-log <TL>
+      The trace log will be written to this path and file.
+
+
+---------- Integration -----------
+
+--int <method> [<parameters>]
+method: The integrator to use for non-linear ODEs. Default:
+      DormandPrince54.
+      * AdamsBashforth: An explicit adaptive step size Adams-Bashforth
+        integrator for the number of previous steps specified as parameter
+        "prev-steps".
+      * AdamsMoulton: An implicit adaptive step size Adams-Moulton integrator
+        for the number of previous steps specified as parameter "prev-steps".
+      * ClassicalRungeKutta: The classical fixed step size fourth-order
+        Runge-Kutta integrator.
+      * DormandPrince54: The adaptive step size 5(4) Dormand-Prince integrator.
+      * DormandPrince853: The adaptive step size 8(5,3) Dormand-Prince
+        integrator.
+      * Euler: A simple fixed step size Euler integrator.
+      * Gill: The fixed step size Gill fourth order Runge-Kutta integrator.
+      * GraggBulirschStoer: An adaptive step size Gragg-Bulirsch-Stoer
+        integrator, one of the most efficient integrators currently available
+        for smooth problems.
+      * HighamHall54: The adaptive step size 5(4) Higham and Hall integrator.
+      * Luther: The fixed step size Luther sixth-order Runge-Kutta integrator.
+      * Midpoint: A fixed step size second-order Runge-Kutta integrator.
+      * ThreeEighths: The fixed step size 3/8 fourth order Runge-Kutta
+        integrator.
+      parameters: Parameters for non-linear ODE integration. All fixed step
+      size integrators have parameter "step" (step size). All adaptive step
+      size integrators have parameters "min-step" (minimum step size; default:
+      1e-6), "max-step" (maximum step size; default: 1), "abs-error" (allowed
+      absolute error; default: 1e-6), and "rel-error" (allowed relative error;
+      default: 1e-14). Additionally, a value for parameter "infinity" (the
+      time horizon) must be specified.
+
+--int-events <method> [<parameters>]
+method: The root finding method for event detection when integrating
+      non-linear ODEs. Default: BracketingNthOrderBrent.
+      * Bisection: Bisection.
+      * BracketingNthOrderBrent: A modification of the Brent algorithm with a
+        configurable maximal order for the invert polynomial root search.
+        Additional parameters: "fun-accuracy" (function value accuracy;
+        default: 1e-15) and "max-order" (maximal order for the invert
+        polynomial root search; default: 5).
+      * Brent: The Brent algorithm. Additional parameters: "fun-accuracy"
+        (function value accuracy, default: 1e-15).
+      * Illinois: The Illinois method, which is a modified Regula Falsi
+        method. Additional parameters: "fun-accuracy" (function value
+        accuracy; default: 1e-15).
+      * Muller: Muller's method, using bisection as a fallback.
+      * Muller2: A variant of Muller's method that does not require the
+        bracketing condition.
+      * Pegasus: The Pegasus method, which is a modified Regula Falsi method.
+        Additional parameters: "fun-accuracy" (function value accuracy;
+        default: 1e-15).
+      * RegulaFalsi: The Regula Falsi or false position method, which is a
+        modified Secant method. Included for education, testing, and
+        comparison purposes, but not to be used for actual problems.
+        Additional parameters: "fun-accuracy" (function value accuracy;
+        default: 1e-15).
+      * Ridders: Ridder's method.
+      * Secant: The Secant method. The solution that is maintained is not
+        bracketed, and as such convergence is not guaranteed.
+      parameters: Parameters for root finding during non-linear ODE
+      integration. All root finding methods have parameters "rel-acc"
+      (relative accuracy; default: 1e-14), "abs-acc" (absolute accuracy;
+      default: 1e-6), "max-step" (maximal time interval between switching
+      function checks; if not specified, use the maximum step size or step
+      size of the integrator), and "max-iters" (maximum number of iterations;
+      default: 2^31-1).
+
+
+------------ Learning ------------
+
+--learn <method> [<parameters>]
+method: The method to use to learn optimal schedulers.
+      * None: No learning (default)
+      * QLearning: Q-learning
+      parameters: Parameters for the learning method. Default value: "episodes
+      = 10000, rate = 0.1, final-rate = 0.1, discount = 1.0, epsilon = 0.15,
+      final-epsilon = 0.15". For learning on MDPs, additional defaults are
+      "scheduler = global"; for learning on nonlinear stochastic hybrid
+      automata, additional defaults are "scheduler = prophetic, disc-factor =
+      10". The optimisation direction of the model's properties can be
+      overriden by setting "nondet = max" or "nondet = min".
+
+
+------- Long-run averages --------
+
+--lra <transient-time> <evaluation-time>
+The duration of the transient phase in long-run average value
+      simulation. Must be specified and positive to simulate long-run average
+      value properties.
+      The duration of the evaluation phase in long-run average value
+      simulation. Must be specified and positive to simulate long-run average
+      value properties.
+
+
+--------- Nondeterminism ---------
+
+--collect-schedulers
+      Collect and return the individual results for each scheduler.
+
+-A, --controlled-automaton <A>
+      The name of the automaton the NN is controlling.
+
+--distributed-schedulers
+      Sample distributed schedulers (for MDP models and unbounded properties
+      on MA models only).
+
+--ls <id>
+      If specified, use the lightweight scheduler with this identifier to
+      resolve nondeterminism.
+
+--lss <strategy> [<budget>]
+strategy: The strategy used for lightweight scheduler samling. If set to
+      Auto (default) and the number of schedulers to sample is 0, use the
+      specified time scheduler and resolver only.
+      * Auto: Select the most appropriate strategy for each property (default)
+      * Sequential: Sequential sampling
+      * TwoPhase: Two-phase sampling
+      * Smart: Smart sampling
+      * Interruptible: Batched interruptible sampling
+      budget: The number of simulation runs to use per iteration in smart
+      sampling or per batch in interruptible sampling. Default: 10000.
+
+-NN, --nn-location <NN>
+      The NN configuration will be read from this file.
+
+--observations-local-global
+      Make global and local variables of the controlled automaton observable
+
+--observations-omniscient
+      Make gloabl variables and all variables of all automata observable
+
+-R, --resolver <resolver>
+      The resolver used to resolve structural nondeterminism. Default: Strict.
+      For MDPs: Oracle: general interface to give state information to another
+      process, NeuralNet: a NN file has to be given
+      Accepted values: Strict, Uniform, Oracle, NN
+
+-L, --schedulers <n> [<class>]
+The number of schedulers to sample in total, or per batch in
+      interruptiple sampling, or 0 to automatically determine the number in
+      smart sampling (default).
+      The string describing the class of schedulers to use with STA models
+      (experimental, only works for models with specific structure), e.g.
+      "hist(l,v,e)" (default) or "ml(t,o)/4".
+
+--schedulers-file <file>
+      The file to write information about the sampled schedulers to.
+
+--schedulers-seed <n>
+      The seed value to be used for pseudo-random number generation to sample
+      schedulers.
+
+--select-by-label
+      Select edges by edge label (action name). If not set, edges are selected
+      by index.
+
+-SOC, --socket <host:port>
+      The socket to connect to the oracle.
+
+-S, --time-scheduler <scheduler>
+      The time scheduler used to resolve temporal nondeterminism. Default:
+      Strict
+      Accepted values: Strict, ASAP, ALAP, Uniform
+
+
+----- Rare event simulation ------
+
+--ifun-calc
+      How to calculate the automatically derived importance function. Default:
+      Distance
+      Accepted values: Distance, Probability
+
+--ifun-op <or> <and>
+or: The operation used to combine the importance values of disjunctions
+      in the property expression. Default: Addition
+      * Add: Addition
+      * Max: Maximum
+      * Min: Minimum
+      * Mul: Multiplication
+      and: The operation used to combine the importance values of conjunctions
+      in the property expression. Default: Addition
+      * Add: Addition
+      * Max: Maximum
+      * Min: Minimum
+      * Mul: Multiplication
+
+--ifun-precision
+      Round the values of the importance function to multiples of this value.
+      Default: 1 for distances, 0.01 otherwise.
+
+--ifun-prop <name> [<initial>] [<target>]
+name: The name of a state property that determines the importance of
+      each state for rare event simulation. If specified, disables automatic
+      calculation of the importance function.
+      initial: The value of the importance property in the initial state. If
+      not specified, it will be determined automatically.
+      target: The value of the importance property in a target state. If not
+      specified, it will be determined automatically by searching for target
+      states, which may take a long time.
+
+--levels <method> [<param>]
+method: The method used to determine the splitting levels.
+      * ExpectedSuccess: Dynamic selection of levels and splitting factors for
+        an expected number of successes (default).
+      * SequentialMonteCarlo: Dynamic selection of levels following the ideas
+        of the sequential Monte Carlo method.
+      * StaticNumber: Select levels such that the number of levels is at most
+        the specified value.
+      * StaticWidth: Select levels such that the width of each level is at
+        most the specified value.
+      * Manual: Use the provided list of levels and splitting factors.
+      param: The parameter for the chosen method to determine splitting
+      levels. For expected success, it is the desired expected number of
+      successes per run (default 1). For SequentialMonteCarlo, it is the
+      number of pilot simulation runs to perform (default 1000). For
+      StaticNumber, it is the number of splitting levels (default 10). For
+      StaticWidth, it is the width of each level (default 10). For Manual, it
+      is a list of levels and splitting factors, e.g. "20:3, 50:4" for levels
+      [0, 20), [20, 50), and [50, infinity) with factors 1 (implicit), 3, and 4.
+
+--rare <method> [<param>]
+method: The method to use for rare event simulation. Default: None
+      * None: Perform standard Monte Carlo simulation.
+      * Restart: Use importance splitting with the RESTART method.
+      * FixedEffort: Use importance splitting with the fixed effort method.
+      * WeightedFixedEffort: Use importance splitting with the weighted fixed
+        effort method.
+      param: The parameter for the chosen method to perform rare event
+      simulation. For Restart, it is the prologation parameter (default 0).
+      For all other methods, it is ignored.
+
+--rare-effort <effort>
+      The per-level effort in rare event simulation. For Restart, it is the
+      splitting factor (default 2, ignored when levels are manually specified
+      or the level calculation method is expected success). For FixedEffort,
+      it is the number of runs per level (default 64). For
+      WeightedFixedEffort, it is the base number of runs per level (default
+      32).
+
+--scheduler-levels
+      Recalculate splitting levels for each scheduler when lightweight
+      scheduler sampling is used.
+
+
+----- Statistical evaluation -----
+
+-C, --conf <c>
+      The confidence parameter of the chosen statistical evaluation method, or
+      0 to automatically compute the confidence. Default unless automatically
+      computed: 0.95
+
+--independent
+      Do not share runs between properties to ensure statistical independence.
+
+--relative-width
+      Interpret the half-width parameter of the chosen statistical evaluation
+      method as a relative width w.r.t. the estimated mean instead of as an
+      absolute width.
+
+-N, --runs <n>
+      The number of simulation runs to perform, or 0 to automatically select
+      the appropriate number of runs (default).
+
+--statistical <method>
+      The preferred statistical method to evaluate properties. Default: Auto
+      * Auto: Select the most appropriate method for each property (default)
+      * Adaptive: New adaptive sampling method by Chen and Xu
+      * Okamoto: Okamoto bound
+      * CI: Confidence intervals
+      * SPRT: Sequential probability ratio test
+
+-W, --width <w>
+      The half-width parameter of the chosen statistical evaluation method, or
+      0 to automatically compute the width. Default unless automatically
+      computed: 0.01 if absolute and 0.1 if relative.
+
+
+------------- Traces -------------
+
+-T, --collect-traces [<format>]
+Collect the traces of the simulation runs performed.
+      The format of the traces returned as part of the analysis results.
+      Default: Full.
+      Accepted values: Full, ContinuousCoordinates
+
+--trace-delays
+      Include all intermediate delay steps performed when integrating
+      nonlinear ODEs in traces.
+
+-TF, --trace-file <file> [<format>]
+The file to write the collected traces to. If not specified, they are
+      returned as part of the analysis results.
+      The format of the trace file. Default: CSV.
+      * CSV: Comma-separated values (using regional format settings)
+      * CSVInvariant: Comma-separated values (using US-English formatting)
+
+--trace-hide-end
+      Do not show the reason for ending a simulation run at the end of each
+      trace.
+
+--trace-hide-start
+      Do not show the initial state of the simulation run at the start of each
+      trace.
+
+--trace-trans-filter <regex>
+      A regular expression that characterises the labels of the transitions to
+      be included in traces. Use "delay" as the label for delay transitions.
+      Default: All transitions are included.
+
+--trace-var-filter <regex>
+      A regular expression that characterises the names of the variables to be
+      included in traces. Default: All variables are included.
+
+

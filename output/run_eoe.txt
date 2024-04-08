@@ -1,0 +1,108 @@
+Time-out value set to 1.
+eoe3000
+Storm 1.8.1
+
+Date: Fri Feb 23 13:31:11 2024
+Command line arguments: --prism /CAVsubmission/CovidModel/COVID2019.pm '--io:constants' 'pop=3,c0_init=3,c1_init=0,c2_init=0,c3_init=0,c4_init=0,c5_init=0,c6_init=0,c7_init=0,c8_init=0,c9_init=0' --prop 'R{"time_step"}=? [F (c1+c2+c3+c4+c5 = 0)]'
+Current working directory: /CAVsubmission/run_scripts
+
+Time for model input parsing: 0.006s.
+
+Time for model construction: 0.026s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	1
+Transitions: 	1
+Reward Models:  time_step
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * (((((c1 + c2) + c3) + c4) + c5) = 0) -> 1 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": R[exp]{"time_step"}=? [F (((((c1 + c2) + c3) + c4) + c5) = 0)] ...
+Result (for initial states): 0
+Time for model checking: 0.000s.
+return value: 0
+eoe0111
+Storm 1.8.1
+
+Date: Fri Feb 23 13:31:11 2024
+Command line arguments: --prism /CAVsubmission/CovidModel/COVID2019.pm '--io:constants' 'pop=3,c0_init=0,c1_init=0,c2_init=0,c3_init=1,c4_init=1,c5_init=1,c6_init=0,c7_init=0,c8_init=0,c9_init=0' --prop 'R{"time_step"}=? [F (c1+c2+c3+c4+c5 = 0)]'
+Current working directory: /CAVsubmission/run_scripts
+
+Time for model input parsing: 0.005s.
+
+Time for model construction: 0.043s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	4471
+Transitions: 	4890
+Reward Models:  time_step
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * (((((c1 + c2) + c3) + c4) + c5) = 0) -> 10 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": R[exp]{"time_step"}=? [F (((((c1 + c2) + c3) + c4) + c5) = 0)] ...
+Result (for initial states): 275.6801531
+Time for model checking: 0.002s.
+return value: 0
+eoe3110
+Storm 1.8.1
+
+Date: Fri Feb 23 13:31:11 2024
+Command line arguments: --prism /CAVsubmission/CovidModel/COVID2019.pm '--io:constants' 'pop=5,c0_init=3,c1_init=0,c2_init=0,c3_init=1,c4_init=1,c5_init=0,c6_init=0,c7_init=0,c8_init=0,c9_init=0' --prop 'R{"time_step"}=? [F (c1+c2+c3+c4+c5 = 0)]'
+Current working directory: /CAVsubmission/run_scripts
+
+Time for model input parsing: 0.005s.
+
+Explored 289269 states in 0 seconds before abort.
+ERROR (ExplicitModelBuilder.cpp:314): Aborted in state space exploration.
+ERROR (storm.cpp:21): An exception caused Storm to terminate. The message of the exception is: AbortException: Aborted in state space exploration.
+return value: 124
+eoe2111
+Storm 1.8.1
+
+Date: Fri Feb 23 13:31:12 2024
+Command line arguments: --prism /CAVsubmission/CovidModel/COVID2019.pm '--io:constants' 'pop=5,c0_init=2,c1_init=0,c2_init=0,c3_init=1,c4_init=1,c5_init=1,c6_init=0,c7_init=0,c8_init=0,c9_init=0' --prop 'R{"time_step"}=? [F (c1+c2+c3+c4+c5 = 0)]'
+Current working directory: /CAVsubmission/run_scripts
+
+Time for model input parsing: 0.005s.
+
+Explored 292167 states in 0 seconds before abort.
+ERROR (ExplicitModelBuilder.cpp:314): Aborted in state space exploration.
+ERROR (storm.cpp:21): An exception caused Storm to terminate. The message of the exception is: AbortException: Aborted in state space exploration.
+return value: 124
+eoe1400
+Storm 1.8.1
+
+Date: Fri Feb 23 13:31:13 2024
+Command line arguments: --prism /CAVsubmission/CovidModel/COVID2019.pm '--io:constants' 'pop=5,c0_init=1,c1_init=0,c2_init=0,c3_init=4,c4_init=0,c5_init=0,c6_init=0,c7_init=0,c8_init=0,c9_init=0' --prop 'R{"time_step"}=? [F (c1+c2+c3+c4+c5 = 0)]'
+Current working directory: /CAVsubmission/run_scripts
+
+Time for model input parsing: 0.005s.
+
+Time for model construction: 0.048s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	6380
+Transitions: 	6879
+Reward Models:  time_step
+State Labels: 	3 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * (((((c1 + c2) + c3) + c4) + c5) = 0) -> 5 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": R[exp]{"time_step"}=? [F (((((c1 + c2) + c3) + c4) + c5) = 0)] ...
+Result (for initial states): 255.5465313
+Time for model checking: 0.002s.
+return value: 0

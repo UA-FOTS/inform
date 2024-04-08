@@ -1,0 +1,9 @@
+#!/bin/bash
+
+../Modest_mac/modest modes ./covidmodel/experiments/popeoe/COVID2019_EOE0111.jani --max-run-length 0 -W 0.2
+
+../Modest_mac/modest modes ./covidmodel/experiments/popeoe/COVID2019_EOE3110.jani --max-run-length 0 -W 0.2
+
+../Modest_mac/modest modes ./covidmodel/experiments/popeoe/COVID2019_EOE2111.jani --max-run-length 0 -W 0.2
+
+../Modest_mac/modest modes ./covidmodel/experiments/popeoe/COVID2019_EOE1400.jani --max-run-length 0 -W 0.2

@@ -1,0 +1,253 @@
+Time-out value set to 1
+_________2__________
+Storm 1.8.1
+
+Date: Fri Feb 23 13:55:39 2024
+Command line arguments: --prism /CAVsubmission/CovidModel/COVID2019.pm '--io:constants' 'pop=5,c0_init=2,c1_init=0,c2_init=0,c3_init=1,c4_init=1,c5_init=1,c6_init=0,c7_init=0,c8_init=0,c9_init=0' --prop 'P=? [(c0 >= c0_init) U (q=30)&(fr0 = c0_init)]'
+Current working directory: /CAVsubmission/run_scripts
+
+Time for model input parsing: 0.006s.
+
+Time for model construction: 0.075s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	14403
+Transitions: 	15843
+Reward Models:  none
+State Labels: 	4 labels
+   * init -> 1 item(s)
+   * deadlock -> 0 item(s)
+   * (c0 >= 2) -> 14363 item(s)
+   * ((q = 30) & (fr0 = 2)) -> 421 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [(c0 >= 2) U ((q = 30) & (fr0 = 2))] ...
+Result (for initial states): 0.9999997331
+Time for model checking: 0.003s.
+return value: 0
+_________3__________
+Storm 1.8.1
+
+Date: Fri Feb 23 13:55:39 2024
+Command line arguments: --prism /CAVsubmission/CovidModel/COVID2019.pm '--io:constants' 'pop=6,c0_init=3,c1_init=0,c2_init=0,c3_init=1,c4_init=1,c5_init=1,c6_init=0,c7_init=0,c8_init=0,c9_init=0' --prop 'P=? [(c0 >= c0_init) U (q=30)&(fr0 = c0_init)]'
+Current working directory: /CAVsubmission/run_scripts
+
+Time for model input parsing: 0.005s.
+
+Time for model construction: 0.093s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	19506
+Transitions: 	21497
+Reward Models:  none
+State Labels: 	4 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * (c0 >= 3) -> 19426 item(s)
+   * ((q = 30) & (fr0 = 3)) -> 421 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [(c0 >= 3) U ((q = 30) & (fr0 = 3))] ...
+Result (for initial states): 0.9999996008
+Time for model checking: 0.005s.
+return value: 0
+_________4__________
+Storm 1.8.1
+
+Date: Fri Feb 23 13:55:39 2024
+Command line arguments: --prism /CAVsubmission/CovidModel/COVID2019.pm '--io:constants' 'pop=7,c0_init=4,c1_init=0,c2_init=0,c3_init=1,c4_init=1,c5_init=1,c6_init=0,c7_init=0,c8_init=0,c9_init=0' --prop 'P=? [(c0 >= c0_init) U (q=30)&(fr0 = c0_init)]'
+Current working directory: /CAVsubmission/run_scripts
+
+Time for model input parsing: 0.005s.
+
+Time for model construction: 0.110s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	24803
+Transitions: 	27389
+Reward Models:  none
+State Labels: 	4 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * (c0 >= 4) -> 24683 item(s)
+   * ((q = 30) & (fr0 = 4)) -> 421 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [(c0 >= 4) U ((q = 30) & (fr0 = 4))] ...
+Result (for initial states): 0.999999469
+Time for model checking: 0.007s.
+return value: 0
+_________5__________
+Storm 1.8.1
+
+Date: Fri Feb 23 13:55:40 2024
+Command line arguments: --prism /CAVsubmission/CovidModel/COVID2019.pm '--io:constants' 'pop=8,c0_init=5,c1_init=0,c2_init=0,c3_init=1,c4_init=1,c5_init=1,c6_init=0,c7_init=0,c8_init=0,c9_init=0' --prop 'P=? [(c0 >= c0_init) U (q=30)&(fr0 = c0_init)]'
+Current working directory: /CAVsubmission/run_scripts
+
+Time for model input parsing: 0.005s.
+
+Time for model construction: 0.130s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	30294
+Transitions: 	33519
+Reward Models:  none
+State Labels: 	4 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * (c0 >= 5) -> 30134 item(s)
+   * ((q = 30) & (fr0 = 5)) -> 421 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [(c0 >= 5) U ((q = 30) & (fr0 = 5))] ...
+Result (for initial states): 0.9999993402
+Time for model checking: 0.009s.
+return value: 0
+_________6__________
+Storm 1.8.1
+
+Date: Fri Feb 23 13:55:40 2024
+Command line arguments: --prism /CAVsubmission/CovidModel/COVID2019.pm '--io:constants' 'pop=9,c0_init=6,c1_init=0,c2_init=0,c3_init=1,c4_init=1,c5_init=1,c6_init=0,c7_init=0,c8_init=0,c9_init=0' --prop 'P=? [(c0 >= c0_init) U (q=30)&(fr0 = c0_init)]'
+Current working directory: /CAVsubmission/run_scripts
+
+Time for model input parsing: 0.005s.
+
+Time for model construction: 0.148s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	35979
+Transitions: 	39887
+Reward Models:  none
+State Labels: 	4 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * (c0 >= 6) -> 35779 item(s)
+   * ((q = 30) & (fr0 = 6)) -> 421 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [(c0 >= 6) U ((q = 30) & (fr0 = 6))] ...
+Result (for initial states): 0.9999992169
+Time for model checking: 0.013s.
+return value: 0
+_________7__________
+Storm 1.8.1
+
+Date: Fri Feb 23 13:55:40 2024
+Command line arguments: --prism /CAVsubmission/CovidModel/COVID2019.pm '--io:constants' 'pop=10,c0_init=7,c1_init=0,c2_init=0,c3_init=1,c4_init=1,c5_init=1,c6_init=0,c7_init=0,c8_init=0,c9_init=0' --prop 'P=? [(c0 >= c0_init) U (q=30)&(fr0 = c0_init)]'
+Current working directory: /CAVsubmission/run_scripts
+
+Time for model input parsing: 0.005s.
+
+Time for model construction: 0.172s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	41858
+Transitions: 	46493
+Reward Models:  none
+State Labels: 	4 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * (c0 >= 7) -> 41618 item(s)
+   * ((q = 30) & (fr0 = 7)) -> 421 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [(c0 >= 7) U ((q = 30) & (fr0 = 7))] ...
+Result (for initial states): 0.9999990687
+Time for model checking: 0.013s.
+return value: 0
+_________8__________
+Storm 1.8.1
+
+Date: Fri Feb 23 13:55:40 2024
+Command line arguments: --prism /CAVsubmission/CovidModel/COVID2019.pm '--io:constants' 'pop=11,c0_init=8,c1_init=0,c2_init=0,c3_init=1,c4_init=1,c5_init=1,c6_init=0,c7_init=0,c8_init=0,c9_init=0' --prop 'P=? [(c0 >= c0_init) U (q=30)&(fr0 = c0_init)]'
+Current working directory: /CAVsubmission/run_scripts
+
+Time for model input parsing: 0.005s.
+
+Time for model construction: 0.192s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	47931
+Transitions: 	53337
+Reward Models:  none
+State Labels: 	4 labels
+   * init -> 1 item(s)
+   * deadlock -> 0 item(s)
+   * (c0 >= 8) -> 47651 item(s)
+   * ((q = 30) & (fr0 = 8)) -> 421 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [(c0 >= 8) U ((q = 30) & (fr0 = 8))] ...
+Result (for initial states): 0.9999989357
+Time for model checking: 0.015s.
+return value: 0
+_________9__________
+Storm 1.8.1
+
+Date: Fri Feb 23 13:55:40 2024
+Command line arguments: --prism /CAVsubmission/CovidModel/COVID2019.pm '--io:constants' 'pop=12,c0_init=9,c1_init=0,c2_init=0,c3_init=1,c4_init=1,c5_init=1,c6_init=0,c7_init=0,c8_init=0,c9_init=0' --prop 'P=? [(c0 >= c0_init) U (q=30)&(fr0 = c0_init)]'
+Current working directory: /CAVsubmission/run_scripts
+
+Time for model input parsing: 0.005s.
+
+Time for model construction: 0.218s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	54198
+Transitions: 	60419
+Reward Models:  none
+State Labels: 	4 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * (c0 >= 9) -> 53878 item(s)
+   * ((q = 30) & (fr0 = 9)) -> 421 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [(c0 >= 9) U ((q = 30) & (fr0 = 9))] ...
+Result (for initial states): 0.9999988029
+Time for model checking: 0.018s.
+return value: 0
+_________10__________
+Storm 1.8.1
+
+Date: Fri Feb 23 13:55:41 2024
+Command line arguments: --prism /CAVsubmission/CovidModel/COVID2019.pm '--io:constants' 'pop=13,c0_init=10,c1_init=0,c2_init=0,c3_init=1,c4_init=1,c5_init=1,c6_init=0,c7_init=0,c8_init=0,c9_init=0' --prop 'P=? [(c0 >= c0_init) U (q=30)&(fr0 = c0_init)]'
+Current working directory: /CAVsubmission/run_scripts
+
+Time for model input parsing: 0.005s.
+
+Time for model construction: 0.238s.
+
+-------------------------------------------------------------- 
+Model type: 	DTMC (sparse)
+States: 	60659
+Transitions: 	67739
+Reward Models:  none
+State Labels: 	4 labels
+   * deadlock -> 0 item(s)
+   * init -> 1 item(s)
+   * (c0 >= 10) -> 60299 item(s)
+   * ((q = 30) & (fr0 = 10)) -> 421 item(s)
+Choice Labels: 	none
+-------------------------------------------------------------- 
+
+Model checking property "1": P=? [(c0 >= 10) U ((q = 30) & (fr0 = 10))] ...
+Result (for initial states): 0.9999986702
+Time for model checking: 0.020s.
+return value: 0

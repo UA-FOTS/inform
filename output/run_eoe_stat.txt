@@ -1,0 +1,77 @@
+Time-out value set to 1
+eoe3000
+The Modest Toolset (www.modestchecker.net), version v3.1.237-g2f62162c7.
+Command: modest modes /CAVsubmission/CovidModel/experiments/popeoe/COVID2019_EOE3000.jani -W 0.9 --max-run-length 0 --seed 997
+
+
+
+
+COVID2019_EOE3000.jani:model: info: COVID2019_EOE3000 is a DTMC model and will be simulated as an MDP using uniform resolution of nondeterminism.
+COVID2019_EOE3000.jani: info: Using default value of 0.95 for the confidence parameter.
+COVID2019_EOE3000.jani: warning: Using the Chow-Robbins method for fixed-width sequential confidence intervals, which does not guarantee the requested confidence.
+
+Peak memory usage: 62 MB
+Analysis results for COVID2019_EOE3000.jani
+Status:          Finished 
+Simulation time: 0.1 s
+
++ Property 1
+  Estimated value:     0 
+  Confidence interval: [0, 0] 
+  Interval half-width: 0 
+  Runs used:           50 
+  Run type:            MDP 
+  Status:              Finished 
+
+  + Sample data
+    Mean: 0 
+
+  + Error bounds
+    Statement: CI: 100(1 - α)% of intervals contain true value (CLT and large number of samples assumptions) 
+    α:         0.050000000000000044 
+
+return value: 0
+eoe0111
+The Modest Toolset (www.modestchecker.net), version v3.1.237-g2f62162c7.
+Command: modest modes /CAVsubmission/CovidModel/experiments/popeoe/COVID2019_EOE0111.jani -W 0.9 --max-run-length 0 --seed 997
+
+
+
+
+COVID2019_EOE0111.jani:model: info: COVID2019_EOE0111 is a DTMC model and will be simulated as an MDP using uniform resolution of nondeterminism.
+COVID2019_EOE0111.jani: info: Using default value of 0.95 for the confidence parameter.
+COVID2019_EOE0111.jani: warning: Using the Chow-Robbins method for fixed-width sequential confidence intervals, which does not guarantee the requested confidence.
+return value: 124
+eoe3110
+The Modest Toolset (www.modestchecker.net), version v3.1.237-g2f62162c7.
+Command: modest modes /CAVsubmission/CovidModel/experiments/popeoe/COVID2019_EOE3110.jani -W 0.9 --max-run-length 0 --seed 997
+
+
+
+
+COVID2019_EOE3110.jani:model: info: COVID2019_EOE3110 is a DTMC model and will be simulated as an MDP using uniform resolution of nondeterminism.
+COVID2019_EOE3110.jani: info: Using default value of 0.95 for the confidence parameter.
+COVID2019_EOE3110.jani: warning: Using the Chow-Robbins method for fixed-width sequential confidence intervals, which does not guarantee the requested confidence.
+return value: 124
+eoe2111
+The Modest Toolset (www.modestchecker.net), version v3.1.237-g2f62162c7.
+Command: modest modes /CAVsubmission/CovidModel/experiments/popeoe/COVID2019_EOE2111.jani -W 0.9 --max-run-length 0 --seed 997
+
+
+
+
+COVID2019_EOE2111.jani:model: info: COVID2019_EOE2111 is a DTMC model and will be simulated as an MDP using uniform resolution of nondeterminism.
+COVID2019_EOE2111.jani: info: Using default value of 0.95 for the confidence parameter.
+COVID2019_EOE2111.jani: warning: Using the Chow-Robbins method for fixed-width sequential confidence intervals, which does not guarantee the requested confidence.
+return value: 124
+eoe1400
+The Modest Toolset (www.modestchecker.net), version v3.1.237-g2f62162c7.
+Command: modest modes /CAVsubmission/CovidModel/experiments/popeoe/COVID2019_EOE1400.jani -W 0.9 --max-run-length 0 --seed 997
+
+
+
+
+COVID2019_EOE1400.jani:model: info: COVID2019_EOE1400 is a DTMC model and will be simulated as an MDP using uniform resolution of nondeterminism.
+COVID2019_EOE1400.jani: info: Using default value of 0.95 for the confidence parameter.
+COVID2019_EOE1400.jani: warning: Using the Chow-Robbins method for fixed-width sequential confidence intervals, which does not guarantee the requested confidence.
+return value: 124
