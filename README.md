@@ -1,6 +1,6 @@
 # The INFORM toolchain
 
-The INFORM toolchain allows formal verification of compartmental model. The toolchain is the first step to a uniform framework for analyzing epidemics. Compartmental models are given in a graph based format, using the cms (compartmental model specifications) fromat.
+The INFORM toolchain allows formal verification of compartmental model. The toolchain is the first step to a uniform framework for analyzing epidemics. Compartmental models are given in a graph based format, using the CMS (compartmental model specifications) fromat.
 
 ## Building and running INFORM
 
