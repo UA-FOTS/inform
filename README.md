@@ -40,3 +40,15 @@ Each CMS file is divided into two sections: the meta-section, and the trans(itio
 src dst [prob1 dependency1] [prob2 dependency2] ...
 ```
 Here, src is the id of source compartment. If there are 3 compartments, the ids are 0, 1, or 2. Dst is the id of the destination state. This is followed by a list of probabilities with their dependency. If there is no dependency then the only probability in the list will be [p _] with p in [0, 1]. If the list is [p1 0] [p2 1], then the success-rate is p1^|0|*p2^|1|. 
+
+### A complete example
+```
+-meta-
+pop 10
+h 1
+comps 3
+final 1
+-trans-
+0 1 [0.2 1] 
+1 2 [0.3 _]
+```
