@@ -3,6 +3,9 @@
 The INFORM toolchain allows formal verification of compartmental model. The toolchain is the first step to a uniform framework for analyzing epidemics. Compartmental models are given in a graph based format, using the CMS (compartmental model specifications) fromat.
 
 ## Building and running INFORM
+We strongly suggest you use the provided Docker image or follow the steps below to build your own from the sources in this repository. Otherwise, you can try and satisfy the following dependencies on your own.
+* [The Storm model checker](https://www.stormchecker.org/)
+* The statistical model checker from the [Modest Toolset](https://www.modestchecker.net/)
 
 ### Setting up the Docker image
 
