@@ -6,7 +6,7 @@ Inform is has a GPLv3 license. All dependencies provided here have their own
 licenses. In particular, Modest is only provided in binary form.
 
 ## Building and running INFORM
-We strongly suggest you use the provided Docker image or follow the steps below to build your own from the sources in this repository. Otherwise, you can try and satisfy the following dependencies on your own.
+We strongly suggest you use [the Docker image](https://hub.docker.com/repository/docker/gaperez64/inform) or follow the steps below to build your own from the sources in this repository. Otherwise, you can try and satisfy the following dependencies on your own.
 * [The Storm model checker](https://www.stormchecker.org/)
 * The statistical model checker from the [Modest Toolset](https://www.modestchecker.net/)
 
