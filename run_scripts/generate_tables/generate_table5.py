@@ -1,4 +1,4 @@
-# This script will generate table 5 from the inform tool paper.
+# This script will generate table 6 from the inform paper.
 
 import pandas as pd
 
