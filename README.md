@@ -1,6 +1,9 @@
 # The INFORM toolchain
 
-The INFORM toolchain allows formal verification of compartmental model. The toolchain is the first step to a uniform framework for analyzing epidemics. Compartmental models are given in a graph based format, using the CMS (compartmental model specifications) fromat.
+The INFORM toolchain allows formal verification of compartmental model. The toolchain is the first step to a uniform framework for analyzing epidemics. Compartmental models are given in a graph based format, using the CMS (compartmental model specifications) format.
+
+Inform is has a GPLv3 license. All dependencies provided here have their own
+licenses. In particular, Modest is only provided in binary form.
 
 ## Building and running INFORM
 We strongly suggest you use the provided Docker image or follow the steps below to build your own from the sources in this repository. Otherwise, you can try and satisfy the following dependencies on your own.
@@ -35,6 +38,21 @@ INFORM is the translation tool for compartmental models in the cms format to sto
 INFORM was written in Rust and can easily be built using the cargo package manager. For your convenience, it has already been compiled. If you want to recompile it, simply go the to directory containing INFORM and use the command "cargo build" to build the application. The executable can then be found in ./inform/target/debug/.
 
 To run INFORM, use the -h flag to display all options. Use the -i filename1 flag to give cms file as input, and use the -p filename2 flag to translate the input to the prism format and save it in filename2. The use of the -l flag is higly advised. This will ensure that INFORM will translate any binomial distributions with compartmental dependencies using the full encoding. Otherwise, the model is not compatible to be translated to jani. 
+
+### Reproducing experiments
+Once you launch bash from the Docker image, you can use the following three
+scripts to re-run all conversions and experiments and to generate the tables
+presented in the paper.
+```
+run_scripts/run_conversions.sh
+run_scripts/run_experiments.sh
+run_scripts/generate_tables/generate_table6.py
+```
+
+The `run_experiments.sh` script has a 10s timeout by default. For the numbers
+reported in the paper, a timeout of 1h was used instead. You can change the
+timeout by defining the environment variable `TO` and setting it to 1h before
+running the experiments' script.
 
 ## The CMS input format
 
