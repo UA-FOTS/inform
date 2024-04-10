@@ -7,18 +7,19 @@ We strongly suggest you use the provided Docker image or follow the steps below 
 * [The Storm model checker](https://www.stormchecker.org/)
 * The statistical model checker from the [Modest Toolset](https://www.modestchecker.net/)
 
-### Setting up the Docker image
+### Building the Docker image yourself
 
 To build it you have to do the following:
 ```
 docker builder build -t some_name .
 ```
+From the directory in which the dockerfile is. 
 
-From the directory in which the dockerfile is. This will build an image from which you can start a container, either in docker desktop with the GUI, or with 
+### Setting up the Docker image
+Now that you have the image, you can start a container, either in docker desktop with the GUI, or with 
 ```
 docker run -ti some_name
 ```
-
  We put tail -f /dev/null as entry point, meaning that when you start the container, it just does nothing. To do anything you can go to the terminal/exec tab in docker desktop (which starts a shell) or run 
 ```
 docker exec -ti name_of_the_container bash
