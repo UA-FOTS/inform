@@ -11,7 +11,7 @@ RUN apt-get install -y \
     curl \
     wget \
     unzip \
-    python \
+    python
 
 # Install pandas for python
 RUN pip install pandas
