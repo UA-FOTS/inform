@@ -7,18 +7,19 @@ We strongly suggest you use the provided Docker image or follow the steps below 
 * [The Storm model checker](https://www.stormchecker.org/)
 * The statistical model checker from the [Modest Toolset](https://www.modestchecker.net/)
 
-### Setting up the Docker image
+### Building the Docker image yourself
 
 To build it you have to do the following:
 ```
 docker builder build -t some_name .
 ```
+From the directory in which the dockerfile is. 
 
-From the directory in which the dockerfile is. This will build an image from which you can start a container, either in docker desktop with the GUI, or with 
+### Setting up the Docker image
+Now that you have the image, you can start a container, either in docker desktop with the GUI, or with 
 ```
 docker run -ti some_name
 ```
-
  We put tail -f /dev/null as entry point, meaning that when you start the container, it just does nothing. To do anything you can go to the terminal/exec tab in docker desktop (which starts a shell) or run 
 ```
 docker exec -ti name_of_the_container bash
@@ -31,7 +32,7 @@ Currently, the dockerfile only installs rust for bash and not shell, so in the t
 
 INFORM is the translation tool for compartmental models in the cms format to stochastic counter machines in the prism (.pm) format. Then model checkers like storm and modest can be used to verify the desired properties. Note that modest does not support prism files yet, and storm-conv has to be used to convert prism files to jani files. 
 
-INFORM was written in Rust and can easily be built using the cargo package manager. Simply go the to directory containing INFORM and use the command "cargo build" to build the application. The executable can then be found in ./inform/target/debug/.
+INFORM was written in Rust and can easily be built using the cargo package manager. For your convenience, it has already been compiled. If you want to recompile it, simply go the to directory containing INFORM and use the command "cargo build" to build the application. The executable can then be found in ./inform/target/debug/.
 
 To run INFORM, use the -h flag to display all options. Use the -i filename1 flag to give cms file as input, and use the -p filename2 flag to translate the input to the prism format and save it in filename2. The use of the -l flag is higly advised. This will ensure that INFORM will translate any binomial distributions with compartmental dependencies using the full encoding. Otherwise, the model is not compatible to be translated to jani. 
 
