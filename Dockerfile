@@ -11,10 +11,10 @@ RUN apt-get install -y \
     curl \
     wget \
     unzip \
-    python
+    python3-pip
 
 # Install pandas for python
-RUN pip install pandas
+RUN pip3 install pandas
 
 # Get Rust
 RUN curl https://sh.rustup.rs -sSf | bash -s -- -y

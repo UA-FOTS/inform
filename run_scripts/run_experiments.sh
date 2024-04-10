@@ -4,18 +4,17 @@ echo "########################"
 echo "# Running  experiments #"
 echo "########################"
 echo "scipt options, "
-echo "  1 : run precision tests, these will conclude within a reasonable time.(Table 5)"
+echo "  1 : run precision tests, these will conclude within a reasonable time. (Table 6)"
 echo "  2 : run time-out tests, these experiments will not finish within"
-echo "      reasonable timei (Table 2)"
+echo "      reasonable time. (Table 3)"
 echo "  3 : run modest on realistic size populations, these experiments"
-echo "      will not finish within reasonable time.(Figure 4)"
+echo "      will not finish within reasonable time.(Figure 6)"
 echo "  4 : run all experiments."
 
 echo "parameter given: $1"
 echo " "
 
-echo "Setting time-out value to 1h"
-TO=1h
+echo "Time-out value set to ${TO:-10s}"
 
 
 
