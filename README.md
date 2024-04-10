@@ -1,6 +1,6 @@
 # The INFORM toolchain
 
-The INFORM toolchain allows formal verification of compartmental model. The toolchain is the first step to a uniform framework for analyzing epidemics. Compartmental models are given in a graph based format, using the CMS (compartmental model specifications) format.
+The INFORM toolchain allows [formal verification of compartmental models](https://arxiv.org/abs/2402.09121). The toolchain is the first step to a uniform framework for analyzing epidemics. Compartmental models are given in a graph based format, using the CMS (compartmental model specifications) format.
 
 Inform is has a GPLv3 license. All dependencies provided here have their own
 licenses. In particular, Modest is only provided in binary form.
