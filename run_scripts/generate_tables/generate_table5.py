@@ -47,28 +47,28 @@ val_popinc_stat001 = []
 val_popos_stat = []
 val_popos_stat001 = []
 
-with open("/CAVsubmission/output/run_eoe.txt") as f:
+with open("/submission/output/run_eoe.txt") as f:
     val_eoe = read_storm_output(f.readlines())
 
-with open("/CAVsubmission/output/run_eoe_stat.txt") as f:
+with open("/submission/output/run_eoe_stat.txt") as f:
     val_eoe_stat = read_modest_output(f.readlines())
 
-with open("/CAVsubmission/output/run_popinc.txt") as f:
+with open("/submission/output/run_popinc.txt") as f:
     val_popinc = read_storm_output(f.readlines())
 
-with open("/CAVsubmission/output/run_popinc_stat.txt") as f:
+with open("/submission/output/run_popinc_stat.txt") as f:
     val_popinc_stat = read_modest_output(f.readlines())
 
-with open("/CAVsubmission/output/run_popinc_stat001.txt") as f:
+with open("/submission/output/run_popinc_stat001.txt") as f:
     val_popinc_stat001 = read_modest_output(f.readlines())
 
-with open("/CAVsubmission/output/run_os.txt") as f:
+with open("/submission/output/run_os.txt") as f:
     val_popos = read_storm_output(f.readlines())
 
-with open("/CAVsubmission/output/run_os_stat.txt") as f:
+with open("/submission/output/run_os_stat.txt") as f:
     val_popos_stat = read_modest_output(f.readlines())
 
-with open("/CAVsubmission/output/run_os_stat001.txt") as f:
+with open("/submission/output/run_os_stat001.txt") as f:
     val_popos_stat001 = read_modest_output(f.readlines())
 
 data = {"population": [(3, 0, 0, 0), (0, 1, 1, 1), (3, 1, 1, 0), (2, 1, 1, 1), (1, 4, 0, 0)],

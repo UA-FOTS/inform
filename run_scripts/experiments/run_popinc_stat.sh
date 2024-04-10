@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo "Time-out value set to ${TO:-1h}"
 
 echo "popinc3000"

@@ -10,7 +10,11 @@ RUN apt-get install -y \
     build-essential \
     curl \
     wget \
-    unzip
+    unzip \
+    python \
+
+# Install pandas for python
+RUN pip install pandas
 
 # Get Rust
 RUN curl https://sh.rustup.rs -sSf | bash -s -- -y
@@ -28,8 +32,8 @@ COPY ./inform /submission/inform
 COPY ./output /submission/output
 COPY ./run_scripts /submission/run_scripts
 
-# Compile inform
-RUN cd inform && cargo build
+# Compile inform, in bash
+RUN /bin/bash -c "source $HOME/.cargo/env && cd inform && cargo build"
 
 # Set entrypoint
 ENTRYPOINT ["tail", "-f", "/dev/null"]

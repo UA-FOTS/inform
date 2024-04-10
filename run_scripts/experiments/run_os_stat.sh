@@ -1,3 +1,6 @@
+#!/bin/bash
+
+
 echo "Time-out value is set to ${TO:-1h}"
 
 echo "os3000"
