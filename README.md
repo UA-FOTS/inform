@@ -41,13 +41,15 @@ To run INFORM, use the -h flag to display all options. Use the -i filename1 flag
 
 ### Reproducing experiments
 Once you launch bash from the Docker image, you can use the following three
-scripts to re-run all conversions and experiments and to generate the tables
-presented in the paper.
+scripts to re-run all conversions and experiments and to generate some of the tables
+presented in the paper. 
 ```
 run_scripts/run_conversions.sh
 run_scripts/run_experiments.sh 4
 run_scripts/generate_tables/generate_table6.py
 ```
+All other tables can be obtained using modifications
+of the last (Python) script.
 
 The `run_experiments.sh` script has a 10s timeout, per individual experiment, by default. For the numbers
 reported in the paper, a timeout of 1h was used instead. You can change the
